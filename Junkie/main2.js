@@ -1666,7 +1666,7 @@ time =  setInterval(() => {
     index++;
      switch(index){
        case 1:
-         img0.src = list24[0]
+        // img0.src = list24[0]
          img3.src = list12[0]
          img4.src = list11[0]
          img5.src = list25[0]
@@ -1674,7 +1674,7 @@ time =  setInterval(() => {
          img7.src = list31[0]
          break;
        case 2:
-            img0.src = list24[1]
+           // img0.src = list24[1]
             img3.src = list12[1]
             img4.src = list11[1]
             img5.src = list25[1]
@@ -1682,7 +1682,7 @@ time =  setInterval(() => {
             img7.src = list31[1]
          break;
         case 3:
-            img0.src = list24[2]
+          //  img0.src = list24[2]
             img3.src = list12[2]
             img4.src = list11[2]
             img5.src = list25[2]
@@ -1691,7 +1691,7 @@ time =  setInterval(() => {
           
           break;
         case 4:
-            img0.src = list24[3]
+         //   img0.src = list24[3]
             img3.src = list12[3]
             img5.src = list25[3]
             img6.src = list28[3]
