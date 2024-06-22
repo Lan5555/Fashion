@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Search Bar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+        <link href="https://cdn.jsdelivr.net/npm/izitoast/dist/css/iziToast.min.css" rel="stylesheet"/>
+    
+</head>
+<body>
+<style>
+  /* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image:url('fits/fit1.jpg');
+    font-family: 'Arial', sans-serif;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center;
+}
+
+.container {
+    text-align: center;
+    width: 90%; /* Added to make container responsive */
+    max-width: 500px; /* Added to prevent container from being too wide */
+}
+
+.attention-text {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%; /* Adjusted to make search bar responsive */
+}
+
+.search-input {
+    width: 100%; /* Adjusted to make input responsive */
+    max-width: 300px; /* Added max-width to control input size */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    font-size: 1rem;
+    transition: all 0.4s ease-in-out;
+}
+
+.search-input:focus {
+    max-width: 400px; /* Adjusted max-width to control expansion on focus */
+    transition: all 0.4s ease-in-out;
+}
+
+.search-button {
+    position: absolute;
+    right: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: none;
+    color: #ff9a9e;
+    font-size: 1.2rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.search-button:hover {
+    color: #fff;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .attention-text {
+        font-size: 2rem;
+    }
+    .search-input {
+        max-width: 100%; /* Full width for smaller screens */
+    }
+    .search-input:focus {
+        max-width: 100%; /* Full width on focus for smaller screens */
+    }
+}
+</style>
+<div class="container">
+    <h1 class="attention-text">Find What You're Looking For</h1>
+    <div class="search-bar">
+        <input type="text" class="search-input" placeholder="Search...">
+        <button class="search-button"><i class="fas fa-search"></i></button>
+    </div>
+</div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/izitoast/dist/js/iziToast.min.js"></script>
+
+
+<script>
+
+
+let fileResources = [
+  {//edit
+    name: "Vans",
+    imageSrc: "realShoes/shoevans.JPG",
+    price: `N${10000}.00`,
+    description: "Brand: Vans, Size: 41-46, (Unboxed), Very comfortable and easy to wear"
+  },
+  {//edit
+    name: "Louis Vuitton Sneakers",
+    imageSrc: "realShoes/shoevuit.jpg",
+    price: `N${24000}.00`,
+    description: "Size 42-46"
+  },
+  {
+    name: "Airforce A",
+    imageSrc: "realShoes/shoeairforce 1 A.JPG",
+    price: `N${15000}.00 (unboxed), N${16000}.00 (boxed)`,
+    description: "Brand: Nike Airforce, Size: 38-43"
+  },
+  {
+    name: "Airforce 1B",
+    imageSrc: "realShoes/shoe airforce 1 B.JPG",
+    price: `N${13500}.00 (unboxed), N${15000}.00 (boxed)`,
+    description: "Brand: Airforce 1, Size: 38-42"
+  },
+  {
+    name: "Jordan A",
+    imageSrc: "realShoes/shoejordanA.JPG",
+    price: `N${15000}.00 (unboxed), N${16000}.00 (boxed)`,
+    description: "Brand: Jordan, Size: 38-43"
+  },
+  {
+    name: "Retro",
+    imageSrc: "realShoes/shoeretro.jpg",
+    price: `N${15000}.00`,
+    description: "Brand: Adidas Retro, Size: 43-46, (Unboxed)"
+  },
+  {//edit
+    name: "New Balance",
+    imageSrc: "realShoes/shoenewbal.jpg",
+    price: `N${25000}.00`,
+    description: "Brand: New Balance Sneakers, Size: 41-45, (Fully boxed)"
+  },
+  {//edit
+    name: "Fashion shoes",
+    imageSrc: "realShoes/shoefash.jpg",
+    price: `N${20000}.00`,
+    description: "Brand: Fashion shoes, Size: 40-45"
+  },
+  {
+    name: "Ogiy",
+    imageSrc: "realShoes/shoeogiy.JPG",
+    price: `N${17500}.00`,
+    description: "Brand: Ogiy, Size: 40-45, (Fully boxed)"
+  },
+  {
+    name: "Naked Wolfe",
+    imageSrc: "realShoes/shoe nak wolfe.JPG",
+    price: `N${23000}.00`,
+    description: "Brand: Naked Wolfe, Size: 38-42, (Unboxed)"
+  },
+  {
+    name: "Pinging Crocs",
+    imageSrc: "slides/slidespcrocs.jpg",
+    price: `N${17000}.00`,
+    description: "Brand: Pinging Crocs, Size: 49-46"
+  },
+  {
+    name: "Adidas",
+    imageSrc: "realShoes/shoeaddi.JPG",
+    price: `N${20000}.00`,
+    description: "Brand: Adidas, Size: 42-46, (Unboxed)"
+  },
+  {
+    name: "Supreme Airforce",
+    imageSrc: "realShoes/shoesup1.JPG",
+    price: `N${23000}.00`,
+    description: "Brand: Supreme Airforce, Size: 38-45, (Unboxed)"
+  },
+  {
+    name: "BL",
+    imageSrc: "realShoes/shoebl.JPG",
+    price: `N${13000}.00`,
+    description: "New in, Size: 38-42, (Unboxed)"
+  },
+  {
+    name: "Timberland Sneakers",
+    imageSrc: "realShoes/shoetim.jpg",
+    price: `N${21000}.00`,
+    description: "Brand: Timberland Sneakers, Size: 40-46"
+  },
+  {
+    name: "Clarks (Corporate Shoe)",
+    imageSrc: "realShoes/shoecope.JPG",
+    price: `N${44000}.00`,
+    description: "Brand: Clarks (Corporate Shoe), Size: 40-46, (Fully boxed)"
+  },
+  {
+    name: "Givenchy",
+    imageSrc: "realShoes/shoegiveA.JPG",
+    price: `N${25000}.00`,
+    description: "Brand: Givenchy, Size: 40-45"
+  },
+  {
+    name: "Timberland Loafers",
+    imageSrc: "realShoes/shoeloaf.jpg",
+    price: `N${24000}.00`,
+    description: "Brand: Timberland Loafers, Size: 40-46"
+  },
+  {
+    name: "Wallabees (Suede)",
+    imageSrc: "realShoes/shoesued.jpg",
+    price: `N${18000}.00`,
+    description: "Brand: Wallabees (Suede), Size: 40-46"
+  },
+  {
+    name: "Wallabees (Navy Blue)",
+    imageSrc: "realShoes/shoewall.jpg",
+    price: `N${18000}.00`,
+    description: "Brand: Wallabees (Navy Blue), Size: 40-46"
+  },
+  {
+    name: "Football Boots",
+    imageSrc: "realShoes/shoefoot.jpg",
+    price: `N${14000}.00`,
+    description: "Football Boots, Size: 40-45"
+  },
+  {
+    name: "Celine",
+    imageSrc: "slides/slidesceli.JPG",
+    price: `N${25000}.00`,
+    description: "Brand: Celine (Carton Pam's), Size: 40-45"
+  },
+  {
+    name: "Balmian",
+    imageSrc: "slides/slidesbalman.JPG",
+    price: `N${25000}.00`,
+    description: "Brand: Balman (Carton Pam's), Size: 40-45"
+  },
+  {//edit
+    name: "Hikers Crocs",
+    imageSrc: "slides/slideshcrocs.jpg",
+    price: `N${19000}.00`,
+    description: "Size: 41-45 Unboxed"
+  },
+  {
+    name: "Givenchy (Carton Pam's)",
+    imageSrc: "slides/slidesgive.JPG",
+    price: `N${25000}.00`,
+    description: "Brand: Givenchy (Carton Pam's), Size: 40-45"
+  },
+  {
+    name: "Stock Pam's",
+    imageSrc: "slides/slidespams.jpg",
+    price: `N${8000}.00`,
+    description: "Stock Pam's, Size: 40-45"
+  },
+  {
+    name: "Crocs",
+    imageSrc: "slides/slidescrocs.jpg",
+    price: `N${15000}.00`,
+    description: "Brand: Crocs, Size: 40-45 (6-11)"
+  },
+  {
+    name: "Literide Crocs",
+    imageSrc: "slides/slidesride.jpg",
+    price: `N${16500}.00`,
+    description: "Brand: Literide Crocs, Size: 40-45 (6-11)"
+  },
+  {
+    name: "Tommy Hilfiger Slippers",
+    imageSrc: "slides/slidestom.jpg",
+    price: `N${5000}.00`,
+    description: "Brand: Tommy Hilfiger Slippers, Size: 41-45"
+  },
+  {
+    name: "Nike Belt",
+    imageSrc: "slides/slidesnike.jpg",
+    price: `N${7500}.00`,
+    description: "Brand: Nike Belt, Size: 40-45"
+  },
+  {//edit
+    name: "Jeans Short",
+    imageSrc: "realTrousers/troserjeanshor.JPG",
+    price: `N${15000}.00`,
+    description: "Quality Jeans Shorts"
+  },
+  {//edit
+    name: "Jean Jacket",
+    imageSrc: "realShirt/shirtjeanjac.jpg",
+    price: `N${21000}.00`,
+    description: "Premium Jean Jacket"
+  },
+  {
+    name: "Match Fit Jean",
+    imageSrc: "marchingFits/matchfitjean.JPG",
+    price: `N${32000}.00`,
+    description: "Quality Jean Matching Fit (Short Troser)"
+  },
+  {//edit
+    name: "Match fit Jean",
+    imageSrc: "marchingFits/matchfitlong.jpg",
+    price: `N${32000}.00`,
+    description: "Quality Matching fit(long trouser)"
+  },
+  {
+    name: "Jean",
+    imageSrc: "realTrousers/troserjeans.jpg",
+    price: `N${22000}.00`,
+    description: "Premium Baggy Jeans"
+  },
+  {
+    name: "Checker",
+    imageSrc: "marchingFits/shirtcheck.JPG",
+    price: `N${10000}.00`,
+    description: "Quality Checker Shirts"
+  },
+  {
+    name: "Tees",
+    imageSrc: "realShirt/shirttees.jpg",
+    price: `N${17000}.00`,
+    description: "Quality Top Notch Tees"
+  },
+  {
+    name: "Hoody",
+    imageSrc: "realShirt/shirthoody.jpg",
+    price: `N${18000}.00`,
+    description: "Quality Hoody"
+  },
+  {
+    name: "Givenchy",
+    imageSrc: "realShoes/shoevenchy.JPG",
+    price: `N${36000}.00`,
+    description: "Brand: Givenchy, Size: 40-46"
+  },
+  {
+    name: "Match Fit Short",
+    imageSrc: "marchingFits/matchpfitshor.JPG",
+    price: `N${25000}.00`,
+    description: "Brand: Balenciaga, Quality Matching Fit"
+  },
+  {//edit
+    name: "Airforce1",
+    imageSrc: "realShoes/shoe1.jpg",
+    price: `N${14000}.00`,
+    description: "14000.00(Unboxed) 15000.00(boxed)"
+  },
+  {
+    name: "x Sor",
+    imageSrc: "realShoes/shoedor.JPG",
+    price: `N${18000}.00`,
+    description: "Quality Shoe x Sor, (Unboxed)"
+  },
+  {
+    name: "Dr. Martin's",
+    imageSrc: "realShoes/shoeDrmart.JPG",
+    price: `N${45000}.00`,
+    description: "Brand: Dr. Martin's, Size: 40-46"
+  },
+  {
+    name: "Louis Vuitton Bigsole",
+    imageSrc: "realShoes/shoelv.JPG",
+    price: `N${35000}.00`,
+    description: "Brand: Louis Vuitton Bigsole, Size: 40-46"
+  },
+  {
+    name: "Nike",
+    imageSrc: "realShoes/shoenike.JPG",
+    price: `N${9000}.00`,
+    description: "Brand: Nike, Size: 41-46"
+  },
+  {
+    name: "Tees XL",
+    imageSrc: "realShirt/shirtte.jpg",
+    price: `N${12000}.00`,
+    description: "Quality Round Neck Tees"
+  },
+  {
+    name: "Jean Jacket",
+    imageSrc: "realShirt/shirtjac.jpg",
+    price: `N${22000}.00`,
+    description: "Quality Jean Jacket"
+  },
+  {
+    name: "Shorts",
+    imageSrc: "realTrousers/trosershorts.jpg",
+    price: `N${12000}.00`,
+    description: "Quality Shorts"
+  },
+  {
+    name: "Timberland",
+    imageSrc: "realShoes/shoetimber.JPG",
+    price: `N${48000}.00`,
+    description: "Brand: Timberland, Grade A Timberland Boots, Size: 40-45"
+  },
+  {
+    name: "Nike SB",
+    imageSrc: "realShoes/shoenikeB.JPG",
+    price: `N${24000}.00`,
+    description: "Brand: Nike SB, Size: 40-45"
+  },
+  {
+    name: "Adidas Gazelle",
+    imageSrc: "realShoes/shoegaze.JPG",
+    price: `N${22000}.00`,
+    description: "Brand: Adidas Gazelle, Size: 40-47, (Boxed)"
+  },
+  {
+    name: "Jordan 4",
+    imageSrc: "realShoes/shoedan4.JPG",
+    price: `N${24000}.00`,
+    description: "Brand: Jordan 4, Size: 40-46, (Boxed)"
+  },
+  {
+    name: "Reebok",
+    imageSrc: "realShoes/shoeree.JPG",
+    price: `N${17000}.00`,
+    description: "Brand: Reebok, Size: 42-46"
+  },
+  {
+    name: "NY",
+    imageSrc: "realShoes/shoeny.JPG",
+    price: `N${23000}.00`,
+    description: "Brand: NY, Size: 40-45, (Unboxed)"
+  },
+  {
+    name: "Nike Zoom",
+    imageSrc: "realShoes/shoezoom.JPG",
+    price: `N${18000}.00`,
+    description: "Brand: Nike Zoom, Size: 40-45"
+  },
+  {
+    name: "Airforce 1",
+    imageSrc: "realShoes/shoeforce.JPG",
+    price: `N${18000}.00`,
+    description: "Brand: Airforce 1, Size: 41-47"
+  },
+  {
+    name: "Fashion Kicks",
+    imageSrc: "realShoes/shoekicks.JPG",
+    price: `N${22000}.00`,
+    description: "Fashion Kicks, Size: 40-45, (Fully boxed)"
+  },
+  {
+    name: "Fendi Roma Big Sole",
+    imageSrc: "realShoes/shoefendi.JPG",
+    price: `N${37000}.00`,
+    description: "Brand: Fendi Roma Big Sole, Size: 40-45"
+  },
+  {
+    name: "Balenciaga Sandals",
+    imageSrc: "realShoes/shoebala.jpg",
+    price: `N${63000}.00`,
+    description: "Brand: Balenciaga Sandals, Size: 40-45, (Fully boxed)"
+  },
+  {
+    name: "Jordan High Dunk",
+    imageSrc: "realShoes/shoedunk.jpg",
+    price: `N${15000}.00`,
+    description: "Brand: Jordan High Dunk, Size: 38-42"
+  },
+  {
+    name: "Balenciaga",
+    imageSrc: "realShirt/shirtciaga2.jpg",
+    price: `N${19000}.00`,
+    description: "Balenciaga Shirt"
+  },
+  {
+    name: "Premium Baggy Jeans",
+    imageSrc: "realTrousers/troserpre.jpg",
+    price: `N${25000}.00`,
+    description: "Premium Baggy Jeans, Quality or Nothing 🔥"
+  },
+  {
+    name: "Quality XL",
+    imageSrc: "realShirt/shirtess.jpg",
+    price: `N${18000}.00`,
+    description: "Quality Shirts"
+  },
+  {
+    name: "Sweater Vest",
+    imageSrc: "realShirt/shirtves.jpg",
+    price: `N${21000}.00`,
+    description: "Quality Sweater Vest"
+  }
+];
+
+
+
+
+window.onload = () => {
+  let button = document.querySelector('.search-button');
+  
+  button.addEventListener('click',() => {
+    performSearch();
+  });
+  let input = document.querySelector('.search-input');
+  input.addEventListener('keyUp',(event)=> {
+    if(event.key === 'Enter'){
+      performSearch();
+    }
+    
+  });
+  
+  
+  function performSearch(){
+    const query = input.value.toLowerCase();
+    const result = fileResources.filter(item => 
+      item.name.toLowerCase().includes(query));
+      displayResult(result);
+  }
+  let array;
+  function displayResult(result){
+    if(result.length === 0){
+      iziToast.warning({
+        title:'Try again',
+        message:'No results found!',
+        timeOut:2000,
+      });
+    }else{
+      result.slice(0,3).forEach(item => {
+        let foundName = item.name;
+        let foundImage = item.imageSrc;
+        let foundPrice = item.price;
+        let foundDescription = item.description;
+        
+        let nestedItem = {
+          name:foundName,
+          imageSrc:foundImage,
+          price:foundPrice,
+          description: foundDescription
+        };
+        
+        let searchResults = JSON.stringify(nestedItem);
+        localStorage.setItem('searchResults',searchResults);
+        window.location.href = "index2.html";
+        
+      });
+    }
+    
+  }
+  
+}
+  
+</script>
+</html>
