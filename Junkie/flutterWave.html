@@ -168,7 +168,7 @@
         currency: "NGN",
         payment_options: "card, banktransfer, ussd",
         meta: {
-          product_name: product
+          product_name: (size != null ? `${product}  Size:${size}` : product)
         },
         customer: {
           email: email,
