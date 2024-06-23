@@ -1126,13 +1126,13 @@ let shoes = [
     name: "Airforce1X",
     imageSrc: "realShoes/shoe1.jpg",
     price: `N${14000}.00`,
-    description: "14000.00(Unboxed) 15000.00(boxed)"
+    description: "14000.00(Unboxed) 15000.00(boxed) Size: 38-42"
   },
   {
     name: "x Sor",
     imageSrc: "realShoes/shoedor.JPG",
     price: `N${18000}.00`,
-    description: "Quality Shoe x Sor, (Unboxed)"
+    description: "Quality Shoe x Sor, (Unboxed) Size: 41-45"
   },
   {
     name: "Dr. Martin's",
