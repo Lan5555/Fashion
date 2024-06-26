@@ -892,7 +892,7 @@ function decrementQuantity8() {
         table.deleteRow(i);
       }
       if(localStorage.getItem('count') != null && localStorage.getItem('currentPage') != null){
-      clearLocalStorageExcept(["currentPage"]);
+      clearLocalStorageExcept(["currentPage","clicked"]);
       }else{
         localStorage.clear();
       }
@@ -901,6 +901,7 @@ function decrementQuantity8() {
       button.style.display = 'none';
       
     }
+    
     function back(){
       history.back();
     }

@@ -2,15 +2,18 @@ document.getElementById('menu').addEventListener('click', function(event) {
       var dropdown = document.getElementById('dropdown');
       dropdown.classList.toggle('open');
       
+      con.style.marginLeft= "70%";
+      con.style.opacity = "0.1";
       event.stopPropagation(); // Prevent the click from propagating to the document
     });
-
+  let con = document.querySelector('.con');
     document.addEventListener('click', function(event) {
       var dropdown = document.getElementById('dropdown');
       var isClickInside = dropdown.contains(event.target) || event.target.id === 'menu';
       if (!isClickInside) {
         dropdown.classList.remove('open');
-        
+        con.style.marginLeft = "";
+        con.style.opacity = "1";
       }
     });
     
@@ -590,6 +593,59 @@ let fileResources1 = [
 ];
 
 
+//fileResources9
+let fileResources9 = [
+    {
+        name: "Timberland",
+        imageSrc: "updateShoe/shoetim.jpg",
+        price: `N${25000}.00`,
+        description: "Size: 40-46, Fully boxed"
+    },
+    {
+        name: "Billionaire Boot",
+        imageSrc: "updateShoe/shoebill.jpg",
+        price: `N${43000}.00`,
+        description: "Size: 39-46, Fully boxed"
+    },
+    {
+        name: "Ferragamo Boot",
+        imageSrc: "updateShoe/shoeferr.jpg",
+        price: `N${45000}.00`,
+        description: "Size: 39-46, Fully boxed"
+    },
+    {
+        name: "Hugo Boss Boot",
+        imageSrc: "updateShoe/shoehugo.jpg",
+        price: `N${45000}.00`,
+        description: "Size: 39-46, Fully boxed"
+    },
+    {
+        name: "Dior Pam's",
+        imageSrc: "updateShoe/shoedor.jpg",
+        price: `N${30000}.00`,
+        description: "Size: 40-46, Fully boxed"
+    },
+    {
+        name: "D&G",
+        imageSrc: "updateShoe/shoedg.jpg",
+        price: `N${37000}.00`,
+        description: "Size: 40-46, Fully boxed"
+    },
+    {
+        name: "Leather jacket",
+        imageSrc: "updateShirt/shirtleath.jpg",
+        price: `N${23000}.00`,
+        description: "Quality Jackets"
+    },
+    {
+        name: "Sweater shirt",
+        imageSrc: "updateShirt/shirtswea.jpg",
+        price: `N${18000}.00`,
+        description: "High Quality"
+    }
+];
+
+
 
 function fileResources11(){
   element1 = fileResources1[0];
@@ -975,27 +1031,59 @@ info7.innerHTML = element7.description;
 info8.innerHTML = element8.description;
 }
 
+//newFiles
+function fileResources99() {
+element1 = fileResources9[0];
+element2 = fileResources9[1];
+element3 = fileResources9[2];
+element4 = fileResources9[3];
+element5 = fileResources9[4];
+element6 = fileResources9[5];
+element7 = fileResources9[6];
+element8 = fileResources9[7];
+
+name1.innerHTML = element1.name;
+name2.innerHTML = element2.name;
+name3.innerHTML = element3.name;
+name4.innerHTML = element4.name;
+name5.innerHTML = element5.name;
+name6.innerHTML = element6.name;
+name7.innerHTML = element7.name;
+name8.innerHTML = element8.name;
+
+img0.src = element1.imageSrc;
+img1.src = element2.imageSrc;
+img2.src = element3.imageSrc;
+img3.src = element4.imageSrc;
+img4.src = element5.imageSrc;
+img5.src = element6.imageSrc;
+img6.src = element7.imageSrc;
+img7.src = element8.imageSrc;
+
+price0.innerHTML = element1.price;
+price1.innerHTML = element2.price;
+price2.innerHTML = element3.price;
+price3.innerHTML = element4.price;
+price4.innerHTML = element5.price;
+price5.innerHTML = element6.price;
+price6.innerHTML = element7.price;
+price7.innerHTML = element8.price;
+
+
+info1.innerHTML = element1.description;
+info2.innerHTML = element2.description;
+info3.innerHTML = element3.description;
+info4.innerHTML = element4.description;
+info5.innerHTML = element5.description;
+info6.innerHTML = element6.description;
+info7.innerHTML = element7.description;
+info8.innerHTML = element8.description;
+}
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//categories
 
 
 
@@ -1116,6 +1204,42 @@ let shoes = [
     price: `N${14000}.00`,
     description: "Football Boots, Size: 40-45"
   },
+  {//newUpdate
+    name: "Timberland",
+    imageSrc: "updateShoe/shoetim.jpg",
+    price: `N${25000}.00`,
+    description: "Size: 40-46, Fully boxed"
+  },
+  {
+    name: "Billionaire Boot",
+    imageSrc: "updateShoe/shoebill.jpg",
+    price: `N${43000}.00`,
+    description: "Size: 39-46, Fully boxed"
+  },
+  {
+    name: "Ferragamo Boot",
+    imageSrc: "updateShoe/shoeferr.jpg",
+    price: `N${45000}.00`,
+    description: "Size: 39-46, Fully boxed"
+  },
+  {
+    name: "Hugo Boss Boot",
+    imageSrc: "updateShoe/shoehugo.jpg",
+    price: `N${45000}.00`,
+    description: "Size: 39-46, Fully boxed"
+  },
+  {
+    name: "Dior Pam's",
+    imageSrc: "updateShoe/shoedor.jpg",
+    price: `N${30000}.00`,
+    description: "Size: 40-46, Fully boxed"
+  },
+  {
+    name: "D&G",
+    imageSrc: "updateShoe/shoedg.jpg",
+    price: `N${37000}.00`,
+    description: "Size: 40-46, Fully boxed"
+   },//endUpdate
   {
     name: "Givenchy XL",
     imageSrc: "realShoes/shoevenchy.JPG",
@@ -1126,13 +1250,13 @@ let shoes = [
     name: "Airforce1X",
     imageSrc: "realShoes/shoe1.jpg",
     price: `N${14000}.00`,
-    description: "14000.00(Unboxed) 15000.00(boxed) Size: 38-42"
+    description: "14000.00(Unboxed) 15000.00(boxed)"
   },
   {
     name: "x Sor",
     imageSrc: "realShoes/shoedor.JPG",
     price: `N${18000}.00`,
-    description: "Quality Shoe x Sor, (Unboxed) Size: 41-45"
+    description: "Quality Shoe x Sor, (Unboxed)"
   },
   {
     name: "Dr. Martin's",
@@ -1240,7 +1364,19 @@ let shoes = [
       imageSrc: "realShirt/shirthoody.jpg",
       price: `N${18000}.00`,
       description: "Quality Hoody"
+    },//newUpdate
+    {
+       name: "Leather jacket",
+       imageSrc: "updateShirt/shirtleath.jpg",
+       price: `N${23000}.00`,
+       description: "Quality Jackets"
     },
+    {
+       name: "Sweater shirt",
+       imageSrc: "updateShirt/shirtswea.jpg",
+       price: `N${18000}.00`,
+       description: "High Quality"
+    },//endUpdate
     {
       name: "Tees XL",
       imageSrc: "realShirt/shirtte.jpg",
@@ -1415,11 +1551,19 @@ let changer2 = fileResources1[3];
 let changer3 = fileResources1[5];
 
 
+
 let newList1 = ["realShoes/shoenewbal2.jpg","realShoes/shoenewbal1.jpg","/realShoes/shoenewbal.jpg"];
 let newList2 = ["realShirt/shirtjeanjack4.jpg","realShirt/shirtjeanjac3.jpg","realShirt/shirtjeanjac2.jpg","realShirt/shirtjeanjac1.jpg"];
-let newList3 = [""]
-let newList4 = [""]
-let newList5 = [""]
+
+//update
+let newList3 = ["updateShoe/shoebill2.jpg","updateShoe/shoebill1.jpg","updateShoe/shoebill.jpg"];
+let newList4 = ["updateShoe/shoedg1.jpg","updateShoe/shoedg.jpg"];
+let newList5 = ["updateShoe/shoedor1.jpg","updateShoe/shoedor.jpg"];
+let newList6 = ["updateShoe/shoeferr2.jpg","updateShoe/shoeferr1.jpg","updateShoe/shoeferr.jpg"];
+let newList7 = ["updateShoe/shoehugo3.jpg","updateShoe/shoehugo2.jpg","updateShoe/shoehugo1.jpg","updateShoe/shoehugo.jpg"]
+let newList8 = ["updateShirt/shirtswea3.jpg","updateShirt/shirtswea2.jpg","updateShirt/shirtswea1.jpg","updateShirt/shirtswea.jpg"]
+let newList9 = ["updateShirt/shirtleath1.jpg","updateShirt/shirtleath.jpg"];
+//end
 
 let list2 = ["realShoes/shoecope1.JPG", "realShoes/shoecope2.JPG", "realShoes/shoecope3.JPG", "realShoes/shoecope.JPG"];
 
@@ -1793,6 +1937,54 @@ time =  setInterval(() => {
   }, 4000);
 
 }
+
+//update
+
+function swapImageSource10() {
+  let index = 0;
+  time = setInterval(() => {
+    index++;
+    switch (index) {
+      case 1:
+        img1.src = newList3[0]
+        img2.src = newList6[0]
+        img3.src = newList7[0]
+        img4.src = newList5[0]
+        img5.src = newList4[0]
+        img6.src = newList9[0]
+        img7.src = newList8[0];
+        break;
+      case 2:
+        img1.src = newList3[1]
+        img2.src = newList6[1]
+        img3.src = newList7[1]
+        img4.src = newList5[1]
+        img5.src = newList4[1]
+        img6.src = newList9[1]
+        img7.src = newList8[1];
+        
+        break;
+      case 3:
+        
+        img2.src = newList6[2]
+        img3.src = newList7[2]
+        img7.src = newList8[2];
+        
+        break;
+      case 4:
+        img3.src = newList7[3]
+        img7.src = newList8[3];
+        index = 0;
+        break;
+
+    }
+
+  }, 4000);
+
+}
+//end;
+
+
 
   let element1 = fileResources1[0];
   let element2 = fileResources1[1];
@@ -2224,6 +2416,11 @@ time =  setInterval(() => {
      localStorage.removeItem('currentPage');
      localStorage.setItem('currentPage', page);
      window.location.href = "index2.html";
+   }else if(backTract == 8){
+    page = 8;
+    localStorage.removeItem('currentPage');
+    localStorage.setItem('currentPage', page);
+    window.location.href = "index2.html";
    }else if(backTract == 0){
      page = 0;
      localStorage.removeItem('currentPage');
@@ -2257,11 +2454,30 @@ time =  setInterval(() => {
     
   }
   
+  let showNewProduct = document.querySelector('.new-product');
 window.onload = function (){
-  
-   
   wait();
+  let colors = ["blue","green","pink","yellow"]
+  //new-product
   
+  let productText = document.querySelector('.product-text');
+  let vibrate = document.querySelector('.vibrate');
+  setInterval(() => {
+    let lan = Math.floor(Math.random() * colors.length);
+    productText.style.color = colors[lan];
+    vibrate.style.color = colors[lan];
+  },200);
+  
+  if(localStorage.getItem('clicked') != null){
+  if(localStorage.getItem('clicked') == false){
+    showNewProduct.style.display = "block";
+  }else{
+    showNewProduct.style.display = "none";
+  }
+  }else{
+    
+  }
+  //end
   if(localStorage.getItem('count') != null){
     dis.style.display = "block";
     dis.classList.add('slideIn');
@@ -2355,9 +2571,16 @@ if(localStorage.getItem('currentPage') != null){
      fileResources88();
      localStorage.setItem('count',counter);
      returner.style.display = 'block';
-     page = 0;
+     page = 8;
+  }else if(check2 == 8){
+    // shuffle(fileResources8);
+    swapImageSource10();
+    fileResources99();
+    localStorage.setItem('count', counter);
+    returner.style.display = 'block';
+    page = 0;
   }
-    
+  //update;  
 }
 
 let check;
@@ -2985,4 +3208,13 @@ function info() {
     timeOut: 20000
 
   });
+}
+
+let clicked = false;
+function newProduct(){
+  localStorage.setItem('clicked',false);
+  page = 8;
+  localStorage.removeItem('currentPage');
+  localStorage.setItem('currentPage', page);
+  window.location.href = "index2.html";
 }

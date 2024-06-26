@@ -13,7 +13,9 @@
     
     <link href="https://cdn.jsdelivr.net/npm/izitoast/dist/css/iziToast.min.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+
     
 
 </head>
@@ -21,6 +23,10 @@
 
   <div class = "up">
   <span class="material-symbols-outlined" id="menu">menu</span>
+  <div class = "new-product">
+      <span class="material-icons-round vibrate" onclick="newProduct()">inventory_2</span>
+      <span class="product-text">New products</span>
+  </div>
   <span class="material-symbols-outlined" id="acc" onclick = "coming()">account_circle</span>
   <i class = "material-icons" id = "star">star</i>
   
@@ -28,12 +34,9 @@
   <button id = "work">Categories</button>
   
   
-  
   <div id = "cat">
    <iframe id = "firstF" src = ""></iframe>
   </div>
-  
- 
   
     <div id = "Amount">
         <p id = "num"></p>
@@ -52,7 +55,6 @@
   
   
   
-  
     <div id = "names">
     <p id = "itemNames"></p>
   </div>
@@ -67,9 +69,9 @@
   
   <div class="dropdown" id="dropdown">
     <h1 id = "lan">Fasion Junkie</h1>
-    <p id = "collect"></p>
-    <a onclick = "later()">Explore</a>
-    <a onclick = "info()">About us</a>
+    <p id = "new" onclick = "newProduct()">• New products</p>
+    <a onclick = "later()">• Explore</a>
+    <a onclick = "info()">• About us</a>
   </div>
 
   <div id = "right-content">
