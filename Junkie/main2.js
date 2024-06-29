@@ -312,10 +312,10 @@ let fileResources1 = [
     description: "Brand: Celine (Carton Pam's), Size: 40-45"
   },
   {
-    name: "Balmian",
+    name: "Balmain",
     imageSrc: "slides/slidesbalman.JPG",
     price: `N${25000}.00`,
-    description: "Brand: Balman (Carton Pam's), Size: 40-45"
+    description: "Brand: Balmain (Carton Pam's), Size: 40-45"
   },
   {//edit
     name: "Hikers Crocs",
@@ -497,7 +497,7 @@ let fileResources1 = [
   {
     name: "Nike SB",
     imageSrc: "realShoes/shoenikeB.JPG",
-    price: `N${24000}.00`,
+    price: `N${18000}.00`,
     description: "Brand: Nike SB, Size: 40-45"
   },
   {
@@ -1285,7 +1285,7 @@ let shoes = [
   {
     name: "Nike SB",
     imageSrc: "realShoes/shoenikeB.JPG",
-    price: `N${24000}.00`,
+    price: `N${18000}.00`,
     description: "Brand: Nike SB, Size: 40-45"
   },
   {
@@ -2462,6 +2462,8 @@ window.onload = function (){
   
   let productText = document.querySelector('.product-text');
   let vibrate = document.querySelector('.vibrate');
+//  let icon = document.querySelector('.badge');
+  
   setInterval(() => {
     let lan = Math.floor(Math.random() * colors.length);
     productText.style.color = colors[lan];
@@ -2471,6 +2473,7 @@ window.onload = function (){
   if(localStorage.getItem('clicked') != null){
   if(localStorage.getItem('clicked') == false){
     showNewProduct.style.display = "block";
+    
   }else{
     showNewProduct.style.display = "none";
   }
@@ -3194,6 +3197,7 @@ localStorage.setItem('imageTracker',track7);
 details8.addEventListener('click', () => {
 localStorage.setItem('imageTracker',track8);
 })
+
 function later() {
   iziToast.success({
     title: 'Coming soon',
@@ -3213,8 +3217,11 @@ function info() {
 let clicked = false;
 function newProduct(){
   localStorage.setItem('clicked',false);
+  
   page = 8;
   localStorage.removeItem('currentPage');
   localStorage.setItem('currentPage', page);
   window.location.href = "index2.html";
 }
+
+ 
