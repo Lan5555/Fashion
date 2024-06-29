@@ -2,7 +2,7 @@ document.getElementById('menu').addEventListener('click', function(event) {
       var dropdown = document.getElementById('dropdown');
       dropdown.classList.toggle('open');
       
-      con.style.marginLeft= "70%";
+      //con.style.marginLeft= "70%";
       con.style.opacity = "0.1";
       event.stopPropagation(); // Prevent the click from propagating to the document
     });
