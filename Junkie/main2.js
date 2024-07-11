@@ -1081,7 +1081,647 @@ info8.innerHTML = element8.description;
 }
 
 
+//json responses 
+let responses1 = [];
+let responses2 = [];
+let responses3 = [];
+let responses4 = [];
+let responses5 = [];
+let responses6 = [];
+let responses7 = [];
+let responses8 = [];
+let responses9 = [];
+let responses10 = [];
+let responses11 = [];
+let responses12 = [];
+let responses13 = [];
+//let responses9 = [];
+//json responses
 
+  async function upload1(){
+  await fetchData();
+  element1 = responses1[0];
+  element2 = responses1[1];
+  element3 = responses1[2];
+  element4 = responses1[3];
+  element5 = responses1[4];
+  element6 = responses1[5];
+  element7 = responses1[6];
+  element8 = responses1[7];
+  
+  name1.innerHTML = element1.name;
+  name2.innerHTML = element2.name;
+  name3.innerHTML = element3.name;
+  name4.innerHTML = element4.name;
+  name5.innerHTML = element5.name;
+  name6.innerHTML = element6.name;
+  name7.innerHTML = element7.name;
+  name8.innerHTML = element8.name;
+  
+  img0.src = element1.imageSrc;
+  img1.src = element2.imageSrc;
+  img2.src = element3.imageSrc;
+  img3.src = element4.imageSrc;
+  img4.src = element5.imageSrc;
+  img5.src = element6.imageSrc;
+  img6.src = element7.imageSrc;
+  img7.src = element8.imageSrc;
+  
+  price0.innerHTML = element1.price;
+  price1.innerHTML = element2.price;
+  price2.innerHTML = element3.price;
+  price3.innerHTML = element4.price;
+  price4.innerHTML = element5.price;
+  price5.innerHTML = element6.price;
+  price6.innerHTML = element7.price;
+  price7.innerHTML = element8.price;
+  
+  
+  info1.innerHTML = element1.description;
+  info2.innerHTML = element2.description;
+  info3.innerHTML = element3.description;
+  info4.innerHTML = element4.description;
+  info5.innerHTML = element5.description;
+  info6.innerHTML = element6.description;
+  info7.innerHTML = element7.description;
+  info8.innerHTML = element8.description;
+}
+async function upload2() {
+  await fetchData();
+  element1 = responses2[0];
+  element2 = responses2[1];
+  element3 = responses2[2];
+  element4 = responses2[3];
+  element5 = responses2[4];
+  element6 = responses2[5];
+  element7 = responses2[6];
+  element8 = responses2[7];
+  
+  name1.innerHTML = element1.name;
+  name2.innerHTML = element2.name;
+  name3.innerHTML = element3.name;
+  name4.innerHTML = element4.name;
+  name5.innerHTML = element5.name;
+  name6.innerHTML = element6.name;
+  name7.innerHTML = element7.name;
+  name8.innerHTML = element8.name;
+  
+  img0.src = element1.imageSrc;
+  img1.src = element2.imageSrc;
+  img2.src = element3.imageSrc;
+  img3.src = element4.imageSrc;
+  img4.src = element5.imageSrc;
+  img5.src = element6.imageSrc;
+  img6.src = element7.imageSrc;
+  img7.src = element8.imageSrc;
+  
+  price0.innerHTML = element1.price;
+  price1.innerHTML = element2.price;
+  price2.innerHTML = element3.price;
+  price3.innerHTML = element4.price;
+  price4.innerHTML = element5.price;
+  price5.innerHTML = element6.price;
+  price6.innerHTML = element7.price;
+  price7.innerHTML = element8.price;
+  
+  
+  info1.innerHTML = element1.description;
+  info2.innerHTML = element2.description;
+  info3.innerHTML = element3.description;
+  info4.innerHTML = element4.description;
+  info5.innerHTML = element5.description;
+  info6.innerHTML = element6.description;
+  info7.innerHTML = element7.description;
+  info8.innerHTML = element8.description;
+}
+async function upload3() {
+  await fetchData();
+  element1 = responses3[0];
+  element2 = responses3[1];
+  element3 = responses3[2];
+  element4 = responses3[3];
+  element5 = responses3[4];
+  element6 = responses3[5];
+  element7 = responses3[6];
+  element8 = responses3[7];
+  
+  name1.innerHTML = element1.name;
+  name2.innerHTML = element2.name;
+  name3.innerHTML = element3.name;
+  name4.innerHTML = element4.name;
+  name5.innerHTML = element5.name;
+  name6.innerHTML = element6.name;
+  name7.innerHTML = element7.name;
+  name8.innerHTML = element8.name;
+  
+  img0.src = element1.imageSrc;
+  img1.src = element2.imageSrc;
+  img2.src = element3.imageSrc;
+  img3.src = element4.imageSrc;
+  img4.src = element5.imageSrc;
+  img5.src = element6.imageSrc;
+  img6.src = element7.imageSrc;
+  img7.src = element8.imageSrc;
+  
+  price0.innerHTML = element1.price;
+  price1.innerHTML = element2.price;
+  price2.innerHTML = element3.price;
+  price3.innerHTML = element4.price;
+  price4.innerHTML = element5.price;
+  price5.innerHTML = element6.price;
+  price6.innerHTML = element7.price;
+  price7.innerHTML = element8.price;
+  
+  
+  info1.innerHTML = element1.description;
+  info2.innerHTML = element2.description;
+  info3.innerHTML = element3.description;
+  info4.innerHTML = element4.description;
+  info5.innerHTML = element5.description;
+  info6.innerHTML = element6.description;
+  info7.innerHTML = element7.description;
+  info8.innerHTML = element8.description;
+}
+async function upload4() {
+  await fetchData();
+  element1 = responses4[0];
+  element2 = responses4[1];
+  element3 = responses4[2];
+  element4 = responses4[3];
+  element5 = responses4[4];
+  element6 = responses4[5];
+  element7 = responses4[6];
+  element8 = responses4[7];
+  
+  name1.innerHTML = element1.name;
+  name2.innerHTML = element2.name;
+  name3.innerHTML = element3.name;
+  name4.innerHTML = element4.name;
+  name5.innerHTML = element5.name;
+  name6.innerHTML = element6.name;
+  name7.innerHTML = element7.name;
+  name8.innerHTML = element8.name;
+  
+  img0.src = element1.imageSrc;
+  img1.src = element2.imageSrc;
+  img2.src = element3.imageSrc;
+  img3.src = element4.imageSrc;
+  img4.src = element5.imageSrc;
+  img5.src = element6.imageSrc;
+  img6.src = element7.imageSrc;
+  img7.src = element8.imageSrc;
+  
+  price0.innerHTML = element1.price;
+  price1.innerHTML = element2.price;
+  price2.innerHTML = element3.price;
+  price3.innerHTML = element4.price;
+  price4.innerHTML = element5.price;
+  price5.innerHTML = element6.price;
+  price6.innerHTML = element7.price;
+  price7.innerHTML = element8.price;
+  
+  
+  info1.innerHTML = element1.description;
+  info2.innerHTML = element2.description;
+  info3.innerHTML = element3.description;
+  info4.innerHTML = element4.description;
+  info5.innerHTML = element5.description;
+  info6.innerHTML = element6.description;
+  info7.innerHTML = element7.description;
+  info8.innerHTML = element8.description;
+}
+async function upload5() {
+  await fetchData();
+  element1 = responses5[0];
+  element2 = responses5[1];
+  element3 = responses5[2];
+  element4 = responses5[3];
+  element5 = responses5[4];
+  element6 = responses5[5];
+  element7 = responses5[6];
+  element8 = responses5[7];
+  
+  name1.innerHTML = element1.name;
+  name2.innerHTML = element2.name;
+  name3.innerHTML = element3.name;
+  name4.innerHTML = element4.name;
+  name5.innerHTML = element5.name;
+  name6.innerHTML = element6.name;
+  name7.innerHTML = element7.name;
+  name8.innerHTML = element8.name;
+  
+  img0.src = element1.imageSrc;
+  img1.src = element2.imageSrc;
+  img2.src = element3.imageSrc;
+  img3.src = element4.imageSrc;
+  img4.src = element5.imageSrc;
+  img5.src = element6.imageSrc;
+  img6.src = element7.imageSrc;
+  img7.src = element8.imageSrc;
+  
+  price0.innerHTML = element1.price;
+  price1.innerHTML = element2.price;
+  price2.innerHTML = element3.price;
+  price3.innerHTML = element4.price;
+  price4.innerHTML = element5.price;
+  price5.innerHTML = element6.price;
+  price6.innerHTML = element7.price;
+  price7.innerHTML = element8.price;
+  
+  
+  info1.innerHTML = element1.description;
+  info2.innerHTML = element2.description;
+  info3.innerHTML = element3.description;
+  info4.innerHTML = element4.description;
+  info5.innerHTML = element5.description;
+  info6.innerHTML = element6.description;
+  info7.innerHTML = element7.description;
+  info8.innerHTML = element8.description;
+}
+async function upload6() {
+  await fetchData();
+  element1 = responses6[0];
+  element2 = responses6[1];
+  element3 = responses6[2];
+  element4 = responses6[3];
+  element5 = responses6[4];
+  element6 = responses6[5];
+  element7 = responses6[6];
+  element8 = responses6[7];
+  
+  name1.innerHTML = element1.name;
+  name2.innerHTML = element2.name;
+  name3.innerHTML = element3.name;
+  name4.innerHTML = element4.name;
+  name5.innerHTML = element5.name;
+  name6.innerHTML = element6.name;
+  name7.innerHTML = element7.name;
+  name8.innerHTML = element8.name;
+  
+  img0.src = element1.imageSrc;
+  img1.src = element2.imageSrc;
+  img2.src = element3.imageSrc;
+  img3.src = element4.imageSrc;
+  img4.src = element5.imageSrc;
+  img5.src = element6.imageSrc;
+  img6.src = element7.imageSrc;
+  img7.src = element8.imageSrc;
+  
+  price0.innerHTML = element1.price;
+  price1.innerHTML = element2.price;
+  price2.innerHTML = element3.price;
+  price3.innerHTML = element4.price;
+  price4.innerHTML = element5.price;
+  price5.innerHTML = element6.price;
+  price6.innerHTML = element7.price;
+  price7.innerHTML = element8.price;
+  
+  
+  info1.innerHTML = element1.description;
+  info2.innerHTML = element2.description;
+  info3.innerHTML = element3.description;
+  info4.innerHTML = element4.description;
+  info5.innerHTML = element5.description;
+  info6.innerHTML = element6.description;
+  info7.innerHTML = element7.description;
+  info8.innerHTML = element8.description;
+}
+async function upload7() {
+  await fetchData();
+  element1 = responses7[0];
+  element2 = responses7[1];
+  element3 = responses7[2];
+  element4 = responses7[3];
+  element5 = responses7[4];
+  element6 = responses7[5];
+  element7 = responses7[6];
+  element8 = responses7[7];
+  
+  name1.innerHTML = element1.name;
+  name2.innerHTML = element2.name;
+  name3.innerHTML = element3.name;
+  name4.innerHTML = element4.name;
+  name5.innerHTML = element5.name;
+  name6.innerHTML = element6.name;
+  name7.innerHTML = element7.name;
+  name8.innerHTML = element8.name;
+  
+  img0.src = element1.imageSrc;
+  img1.src = element2.imageSrc;
+  img2.src = element3.imageSrc;
+  img3.src = element4.imageSrc;
+  img4.src = element5.imageSrc;
+  img5.src = element6.imageSrc;
+  img6.src = element7.imageSrc;
+  img7.src = element8.imageSrc;
+  
+  price0.innerHTML = element1.price;
+  price1.innerHTML = element2.price;
+  price2.innerHTML = element3.price;
+  price3.innerHTML = element4.price;
+  price4.innerHTML = element5.price;
+  price5.innerHTML = element6.price;
+  price6.innerHTML = element7.price;
+  price7.innerHTML = element8.price;
+  
+  
+  info1.innerHTML = element1.description;
+  info2.innerHTML = element2.description;
+  info3.innerHTML = element3.description;
+  info4.innerHTML = element4.description;
+  info5.innerHTML = element5.description;
+  info6.innerHTML = element6.description;
+  info7.innerHTML = element7.description;
+  info8.innerHTML = element8.description;
+}
+async function upload8() {
+  await fetchData();
+  element1 = responses8[0];
+  element2 = responses8[1];
+  element3 = responses8[2];
+  element4 = responses8[3];
+  element5 = responses8[4];
+  element6 = responses8[5];
+  element7 = responses8[6];
+  element8 = responses8[7];
+  
+  name1.innerHTML = element1.name;
+  name2.innerHTML = element2.name;
+  name3.innerHTML = element3.name;
+  name4.innerHTML = element4.name;
+  name5.innerHTML = element5.name;
+  name6.innerHTML = element6.name;
+  name7.innerHTML = element7.name;
+  name8.innerHTML = element8.name;
+  
+  img0.src = element1.imageSrc;
+  img1.src = element2.imageSrc;
+  img2.src = element3.imageSrc;
+  img3.src = element4.imageSrc;
+  img4.src = element5.imageSrc;
+  img5.src = element6.imageSrc;
+  img6.src = element7.imageSrc;
+  img7.src = element8.imageSrc;
+  
+  price0.innerHTML = element1.price;
+  price1.innerHTML = element2.price;
+  price2.innerHTML = element3.price;
+  price3.innerHTML = element4.price;
+  price4.innerHTML = element5.price;
+  price5.innerHTML = element6.price;
+  price6.innerHTML = element7.price;
+  price7.innerHTML = element8.price;
+  
+  
+  info1.innerHTML = element1.description;
+  info2.innerHTML = element2.description;
+  info3.innerHTML = element3.description;
+  info4.innerHTML = element4.description;
+  info5.innerHTML = element5.description;
+  info6.innerHTML = element6.description;
+  info7.innerHTML = element7.description;
+  info8.innerHTML = element8.description;
+}
+async function upload9() {
+  await fetchData();
+  element1 = responses9[0];
+  element2 = responses9[1];
+  element3 = responses9[2];
+  element4 = responses9[3];
+  element5 = responses9[4];
+  element6 = responses9[5];
+  element7 = responses9[6];
+  element8 = responses9[7];
+  
+  name1.innerHTML = element1.name;
+  name2.innerHTML = element2.name;
+  name3.innerHTML = element3.name;
+  name4.innerHTML = element4.name;
+  name5.innerHTML = element5.name;
+  name6.innerHTML = element6.name;
+  name7.innerHTML = element7.name;
+  name8.innerHTML = element8.name;
+  
+  img0.src = element1.imageSrc;
+  img1.src = element2.imageSrc;
+  img2.src = element3.imageSrc;
+  img3.src = element4.imageSrc;
+  img4.src = element5.imageSrc;
+  img5.src = element6.imageSrc;
+  img6.src = element7.imageSrc;
+  img7.src = element8.imageSrc;
+  
+  price0.innerHTML = element1.price;
+  price1.innerHTML = element2.price;
+  price2.innerHTML = element3.price;
+  price3.innerHTML = element4.price;
+  price4.innerHTML = element5.price;
+  price5.innerHTML = element6.price;
+  price6.innerHTML = element7.price;
+  price7.innerHTML = element8.price;
+  
+  
+  info1.innerHTML = element1.description;
+  info2.innerHTML = element2.description;
+  info3.innerHTML = element3.description;
+  info4.innerHTML = element4.description;
+  info5.innerHTML = element5.description;
+  info6.innerHTML = element6.description;
+  info7.innerHTML = element7.description;
+  info8.innerHTML = element8.description;
+}
+async function upload10() {
+  await fetchData();
+  element1 = responses10[0];
+  element2 = responses10[1];
+  element3 = responses10[2];
+  element4 = responses10[3];
+  element5 = responses10[4];
+  element6 = responses10[5];
+  element7 = responses10[6];
+  element8 = responses10[7];
+  
+  name1.innerHTML = element1.name;
+  name2.innerHTML = element2.name;
+  name3.innerHTML = element3.name;
+  name4.innerHTML = element4.name;
+  name5.innerHTML = element5.name;
+  name6.innerHTML = element6.name;
+  name7.innerHTML = element7.name;
+  name8.innerHTML = element8.name;
+  
+  img0.src = element1.imageSrc;
+  img1.src = element2.imageSrc;
+  img2.src = element3.imageSrc;
+  img3.src = element4.imageSrc;
+  img4.src = element5.imageSrc;
+  img5.src = element6.imageSrc;
+  img6.src = element7.imageSrc;
+  img7.src = element8.imageSrc;
+  
+  price0.innerHTML = element1.price;
+  price1.innerHTML = element2.price;
+  price2.innerHTML = element3.price;
+  price3.innerHTML = element4.price;
+  price4.innerHTML = element5.price;
+  price5.innerHTML = element6.price;
+  price6.innerHTML = element7.price;
+  price7.innerHTML = element8.price;
+  
+  
+  info1.innerHTML = element1.description;
+  info2.innerHTML = element2.description;
+  info3.innerHTML = element3.description;
+  info4.innerHTML = element4.description;
+  info5.innerHTML = element5.description;
+  info6.innerHTML = element6.description;
+  info7.innerHTML = element7.description;
+  info8.innerHTML = element8.description;
+}
+async function upload11() {
+  await fetchData();
+  element1 = responses11[0];
+  element2 = responses11[1];
+  element3 = responses11[2];
+  element4 = responses11[3];
+  element5 = responses11[4];
+  element6 = responses11[5];
+  element7 = responses11[6];
+  element8 = responses11[7];
+  
+  name1.innerHTML = element1.name;
+  name2.innerHTML = element2.name;
+  name3.innerHTML = element3.name;
+  name4.innerHTML = element4.name;
+  name5.innerHTML = element5.name;
+  name6.innerHTML = element6.name;
+  name7.innerHTML = element7.name;
+  name8.innerHTML = element8.name;
+  
+  img0.src = element1.imageSrc;
+  img1.src = element2.imageSrc;
+  img2.src = element3.imageSrc;
+  img3.src = element4.imageSrc;
+  img4.src = element5.imageSrc;
+  img5.src = element6.imageSrc;
+  img6.src = element7.imageSrc;
+  img7.src = element8.imageSrc;
+  
+  price0.innerHTML = element1.price;
+  price1.innerHTML = element2.price;
+  price2.innerHTML = element3.price;
+  price3.innerHTML = element4.price;
+  price4.innerHTML = element5.price;
+  price5.innerHTML = element6.price;
+  price6.innerHTML = element7.price;
+  price7.innerHTML = element8.price;
+  
+  
+  info1.innerHTML = element1.description;
+  info2.innerHTML = element2.description;
+  info3.innerHTML = element3.description;
+  info4.innerHTML = element4.description;
+  info5.innerHTML = element5.description;
+  info6.innerHTML = element6.description;
+  info7.innerHTML = element7.description;
+  info8.innerHTML = element8.description;
+}
+async function upload12() {
+  await fetchData();
+  element1 = responses12[0];
+  element2 = responses12[1];
+  element3 = responses12[2];
+  element4 = responses12[3];
+  element5 = responses12[4];
+  element6 = responses12[5];
+  element7 = responses12[6];
+  element8 = responses12[7];
+  
+  name1.innerHTML = element1.name;
+  name2.innerHTML = element2.name;
+  name3.innerHTML = element3.name;
+  name4.innerHTML = element4.name;
+  name5.innerHTML = element5.name;
+  name6.innerHTML = element6.name;
+  name7.innerHTML = element7.name;
+  name8.innerHTML = element8.name;
+  
+  img0.src = element1.imageSrc;
+  img1.src = element2.imageSrc;
+  img2.src = element3.imageSrc;
+  img3.src = element4.imageSrc;
+  img4.src = element5.imageSrc;
+  img5.src = element6.imageSrc;
+  img6.src = element7.imageSrc;
+  img7.src = element8.imageSrc;
+  
+  price0.innerHTML = element1.price;
+  price1.innerHTML = element2.price;
+  price2.innerHTML = element3.price;
+  price3.innerHTML = element4.price;
+  price4.innerHTML = element5.price;
+  price5.innerHTML = element6.price;
+  price6.innerHTML = element7.price;
+  price7.innerHTML = element8.price;
+  
+  
+  info1.innerHTML = element1.description;
+  info2.innerHTML = element2.description;
+  info3.innerHTML = element3.description;
+  info4.innerHTML = element4.description;
+  info5.innerHTML = element5.description;
+  info6.innerHTML = element6.description;
+  info7.innerHTML = element7.description;
+  info8.innerHTML = element8.description;
+}
+async function upload13() {
+  await fetchData();
+  element1 = responses13[0];
+  element2 = responses13[1];
+  element3 = responses13[2];
+  element4 = responses13[3];
+  element5 = responses13[4];
+  element6 = responses13[5];
+  element7 = responses13[6];
+  element8 = responses13[7];
+  
+  name1.innerHTML = element1.name;
+  name2.innerHTML = element2.name;
+  name3.innerHTML = element3.name;
+  name4.innerHTML = element4.name;
+  name5.innerHTML = element5.name;
+  name6.innerHTML = element6.name;
+  name7.innerHTML = element7.name;
+  name8.innerHTML = element8.name;
+  
+  img0.src = element1.imageSrc;
+  img1.src = element2.imageSrc;
+  img2.src = element3.imageSrc;
+  img3.src = element4.imageSrc;
+  img4.src = element5.imageSrc;
+  img5.src = element6.imageSrc;
+  img6.src = element7.imageSrc;
+  img7.src = element8.imageSrc;
+  
+  price0.innerHTML = element1.price;
+  price1.innerHTML = element2.price;
+  price2.innerHTML = element3.price;
+  price3.innerHTML = element4.price;
+  price4.innerHTML = element5.price;
+  price5.innerHTML = element6.price;
+  price6.innerHTML = element7.price;
+  price7.innerHTML = element8.price;
+  
+  
+  info1.innerHTML = element1.description;
+  info2.innerHTML = element2.description;
+  info3.innerHTML = element3.description;
+  info4.innerHTML = element4.description;
+  info5.innerHTML = element5.description;
+  info6.innerHTML = element6.description;
+  info7.innerHTML = element7.description;
+  info8.innerHTML = element8.description;
+}
 
 //categories
 
@@ -2421,6 +3061,72 @@ function swapImageSource10() {
     localStorage.removeItem('currentPage');
     localStorage.setItem('currentPage', page);
     window.location.href = "index2.html";
+   }else if(backTract == 9){
+     page = 9;
+     localStorage.removeItem('currentPage');
+     localStorage.setItem('currentPage', page);
+     window.location.href = "index2.html";
+     
+   }else if (backTract == 10) {
+    page = 10;
+    localStorage.removeItem('currentPage');
+    localStorage.setItem('currentPage', page);
+    window.location.href = "index2.html";
+   } else if (backTract == 11) {
+    page = 11;
+    localStorage.removeItem('currentPage');
+    localStorage.setItem('currentPage', page);
+    window.location.href = "index2.html";
+   }else if (backTract == 12) {
+    page = 12;
+    localStorage.removeItem('currentPage');
+    localStorage.setItem('currentPage', page);
+    window.location.href = "index2.html";
+   }else if (backTract == 13) {
+    page = 13;
+    localStorage.removeItem('currentPage');
+    localStorage.setItem('currentPage', page);
+    window.location.href = "index2.html";
+   }else if (backTract == 14) {
+    page = 14;
+    localStorage.removeItem('currentPage');
+    localStorage.setItem('currentPage', page);
+    window.location.href = "index2.html";
+   }else if (backTract == 15) {
+    page = 15;
+    localStorage.removeItem('currentPage');
+    localStorage.setItem('currentPage', page);
+    window.location.href = "index2.html";
+   }else if (backTract == 16) {
+    page = 16;
+    localStorage.removeItem('currentPage');
+    localStorage.setItem('currentPage', page);
+    window.location.href = "index2.html";
+   }else if (backTract == 17) {
+    page = 17;
+    localStorage.removeItem('currentPage');
+    localStorage.setItem('currentPage', page);
+    window.location.href = "index2.html";
+   }else if (backTract == 18) {
+    page = 18;
+    localStorage.removeItem('currentPage');
+    localStorage.setItem('currentPage', page);
+    window.location.href = "index2.html";
+   }else if (backTract == 19) {
+    page = 19;
+    localStorage.removeItem('currentPage');
+    localStorage.setItem('currentPage', page);
+    window.location.href = "index2.html";
+   }else if (backTract == 20) {
+    page = 20;
+    localStorage.removeItem('currentPage');
+    localStorage.setItem('currentPage', page);
+    window.location.href = "index2.html";
+   }else if (backTract == 21) {
+    page = 21;
+    localStorage.removeItem('currentPage');
+    localStorage.setItem('currentPage', page);
+    window.location.href = "index2.html";
    }else if(backTract == 0){
      page = 0;
      localStorage.removeItem('currentPage');
@@ -2455,8 +3161,253 @@ function swapImageSource10() {
   }
   
   let showNewProduct = document.querySelector('.new-product');
+  
+  //fetchData
+  
+  async function fetchData() {
+  try {
+    const response = await fetch('uploads.json');
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    const data = await response.json(); // Parse JSON data from the response
+
+    // Clear existing arrays before populating them
+    responses1 = [];
+    responses2 = [];
+    responses3 = [];
+    responses4 = [];
+    responses5 = [];
+    responses6 = [];
+    responses7 = [];
+    responses8 = [];
+    responses9 = [];
+    responses10 = [];
+    responses11 = [];
+    responses12 = [];
+    responses13 = [];
+
+    // Categorize data into respective arrays based on index
+    data.forEach((element, index) => {
+      if (index >= 0 && index < 8) {
+        responses1.push({
+          name: element.fileName,
+          imageSrc: element.fileExt,
+          price: `N${element.price}`,
+          description: element.description
+        });
+      } else if (index >= 8 && index < 16) {
+        responses2.push({
+          name: element.fileName,
+          imageSrc: element.fileExt,
+          price: `N${element.price}`,
+          description: element.description
+        });
+      } else if (index >= 16 && index < 24) {
+        responses3.push({
+          name: element.fileName,
+          imageSrc: element.fileExt,
+          price: `N${element.price}`,
+          description: element.description
+        });
+      } else if (index >= 24 && index < 32) {
+        responses4.push({
+          name: element.fileName,
+          imageSrc: element.fileExt,
+          price: `N${element.price}`,
+          description: element.description
+        });
+      } else if (index >= 32 && index < 40) {
+        responses5.push({
+          name: element.fileName,
+          imageSrc: element.fileExt,
+          price: `N${element.price}`,
+          description: element.description
+        });
+      } else if (index >= 40 && index < 48) {
+        responses6.push({
+          name: element.fileName,
+          imageSrc: element.fileExt,
+          price: `N${element.price}`,
+          description: element.description
+        });
+      } else if (index >= 48 && index < 56) {
+        responses7.push({
+          name: element.fileName,
+          imageSrc: element.fileExt,
+          price: `N${element.price}`,
+          description: element.description
+        });
+      } else if (index >= 56 && index < 64) {
+        responses8.push({
+          name: element.fileName,
+          imageSrc: element.fileExt,
+          price: `N${element.price}`,
+          description: element.description
+        });
+      } else if (index >= 64 && index < 72) {
+        responses9.push({
+          name: element.fileName,
+          imageSrc: element.fileExt,
+          price: `N${element.price}`,
+          description: element.description
+        });
+      } else if (index >= 72 && index < 80) {
+        responses10.push({
+          name: element.fileName,
+          imageSrc: element.fileExt,
+          price: `N${element.price}`,
+          description: element.description
+        });
+      } else if (index >= 80 && index < 88) {
+        responses11.push({
+          name: element.fileName,
+          imageSrc: element.fileExt,
+          price: `N${element.price}`,
+          description: element.description
+        });
+      } else if (index >= 88 && index < 96) {
+        responses12.push({
+          name: element.fileName,
+          imageSrc: element.fileExt,
+          price: `N${element.price}`,
+          description: element.description
+        });
+      } else if (index >= 96 && index < 104) {
+        responses13.push({
+          name: element.fileName,
+          imageSrc: element.fileExt,
+          price: element.price,
+          description: element.description
+        });
+      }
+    });
+
+    console.log('responses1:', responses1); // Log responses1 for verification
+
+    // Resolve the promise after processing the data
+    return Promise.resolve();
+
+  } catch (error) {
+    console.error('Error fetching data:', error);
+    // Reject the promise if there's an error
+    return Promise.reject(error);
+  }
+}
+
+  //awaiters
+  async function initialWait1(){
+      await fetchData();
+      if (responses1.length == 8) {
+        page = 9;
+      } else {
+        page = 0;
+      }
+    }
+    async function initialWait2() {
+      await fetchData();
+      if (responses2.length == 8) {
+        page = 10;
+      } else {
+        page = 0;
+      }
+    }
+    async function initialWait3() {
+      await fetchData();
+      if (responses3.length == 8) {
+        page = 11;
+      } else {
+        page = 0;
+      }
+    }
+    async function initialWait5() {
+      await fetchData();
+      if (responses4.length == 8) {
+        page = 12;
+      } else {
+        page = 0;
+      }
+    }
+    async function initialWait6() {
+      await fetchData();
+      if (responses5.length == 8) {
+        page = 13;
+      } else {
+        page = 0;
+      }
+    }
+    async function initialWait7() {
+      await fetchData();
+      if (responses6.length == 8) {
+        page = 14;
+      } else {
+        page = 0;
+      }
+    }
+    async function initialWait8() {
+      await fetchData();
+      if (responses7.length == 8) {
+        page = 15;
+      } else {
+        page = 0;
+      }
+    }
+    async function initialWait9() {
+      await fetchData();
+      if (responses8.length == 8) {
+        page = 16;
+      } else {
+        page = 0;
+      }
+    }
+    async function initialWait10() {
+      await fetchData();
+      if (responses9.length == 8) {
+        page = 17;
+      } else {
+        page = 0;
+      }
+    }
+    async function initialWait11() {
+      await fetchData();
+      if (responses10.length == 8) {
+        page = 18;
+      } else {
+        page = 0;
+      }
+    }
+    async function initialWait12() {
+      await fetchData();
+      if (responses11.length == 8) {
+        page = 19;
+      } else {
+        page = 0;
+      }
+    }
+    async function initialWait13() {
+      await fetchData();
+      if (responses12.length == 8) {
+        page = 20;
+      } else {
+        page = 0;
+      }
+    }
+    async function initialWait14() {
+      await fetchData();
+      if (responses13.length == 8) {
+        page = 21;
+      } else {
+        page = 0;
+      }
+    }
+    
+  //awaiters
+  
+  
+  //window.onload()
 window.onload = function (){
   wait();
+  fetchData();
   let colors = ["blue","green","pink","yellow"]
   //new-product
   
@@ -2581,7 +3532,94 @@ if(localStorage.getItem('currentPage') != null){
     fileResources99();
     localStorage.setItem('count', counter);
     returner.style.display = 'block';
+    
+    initialWait1();
+    
+  }else if(check2 == 9){
+    upload1();
+    localStorage.setItem('count', counter);
+    returner.style.display = 'block';
+   
+    initialWait2();
+  }else if(check2 == 10){
+    upload2();
+    localStorage.setItem('count', counter);
+    returner.style.display = 'block';
+  
+    initialWait3();
+  }else if(check2 == 11){
+    upload3();
+    localStorage.setItem('count', counter);
+    returner.style.display = 'block';
+  
+    initialWait5();
+  }else if(check2 == 12){
+    upload4();
+    localStorage.setItem('count', counter);
+    returner.style.display = 'block';
+    
+   initialWait6();
+   
+  }else if(check2 == 13){
+    upload5();
+    localStorage.setItem('count', counter);
+    returner.style.display = 'block';
+  
+    initialWait7();
+     
+  }else if(check2 == 14){
+    upload6();
+    localStorage.setItem('count', counter);
+    returner.style.display = 'block';
+    
+    initialWait8();
+  
+  }else if(check2 == 15){
+    upload7();
+    localStorage.setItem('count', counter);
+    returner.style.display = 'block';
+  
+    initialWait9();
+  }else if(check2 == 16){
+    upload8();
+    localStorage.setItem('count', counter);
+    returner.style.display = 'block';
+  
+    initialWait10();
+  
+  }else if(check2 == 17){
+    upload9();
+    localStorage.setItem('count', counter);
+    returner.style.display = 'block';
+  
+    initialWait11();
+  
+  }else if(check2 == 18){
+    upload10();
+    localStorage.setItem('count', counter);
+    returner.style.display = 'block';
+  
+    initialWait12();
+  
+  }else if(check2 == 19){
+    upload11();
+    localStorage.setItem('count', counter);
+    returner.style.display = 'block';
+  
+    initialWait13();
+  
+  }else if(check2 == 20){
+    upload12();
+    localStorage.setItem('count', counter);
+    returner.style.display = 'block';
+  
+    initialWait14();
+  }else if(check2 == 21){
+    upload13();
+    localStorage.setItem('count', counter);
+    returner.style.display = 'block';
     page = 0;
+  
   }
   //update;  
 }
