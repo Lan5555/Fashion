@@ -4302,7 +4302,7 @@ function newProduct(){
 }
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCu1ri60EkszcP57JjdQAesjB5tnn3g5KM",
+  apiKey: "FIREBASE_API_KEY_PLACEHOLDER",
   authDomain: "validator-533ce.firebaseapp.com",
   projectId: "validator-533ce",
   storageBucket: "validator-533ce.appspot.com",
