@@ -3404,10 +3404,49 @@ function swapImageSource10() {
   //awaiters
   
   
+  
+  // Function to listen for changes in the database
+  let lastEventCount = parseInt(localStorage.getItem('lastEventCount')) || 0; // Initialize from localStorage or 0
+  
+  function listenForEvents() {
+    const eventsRef = database.ref('bell');
+  
+    eventsRef.on('value', (snapshot) => {
+      const events = snapshot.val();
+  
+      if (events) {
+        const eventCount = Object.keys(events).length; // Get the number of events
+  
+        if (eventCount > lastEventCount) {
+          // New event has been added
+          lastEventCount = eventCount; // Update the count
+  
+          showNewProduct.style.display = "block"; // Show new product
+  
+          localStorage.setItem('lastEventCount', lastEventCount); // Update local storage
+        } else if (eventCount === lastEventCount) {
+          
+          if (showNewProduct.style.display === "block") {
+            showNewProduct.style.display = "none"; // Hide if no new events
+          }
+        }
+      } else {
+        console.log('No events found.');
+      }
+    });
+  }
+  
+  // Call this function once to start listening
+
+  
+
+
+  
   //window.onload()
 window.onload = function (){
   wait();
   fetchData();
+  listenForEvents();
   let colors = ["blue","green","pink","yellow"]
   //new-product
   
@@ -4280,13 +4319,30 @@ let realPage;
 
 let doc = document.getElementById('doc');
 let doc1 = document.getElementById('doc1');
+let rang = new Date().toISOString();
 function displayNewProduct(){
+  
+  
   let key2 = document.getElementById("keys").value;
   let key3 = document.getElementById("keys1").value;
   console.log(key2);
   if(key2 === "5422" || key2 === "6984"|| key3 === "5422" || key3 === "6984"){
   localStorage.removeItem('clicked');
   const dataRef = database.ref('page');
+  //ring
+  const dataRef2 = database.ref('bell').push();
+  dataRef2.set({
+    rang: rang
+  }).then(() => {
+    iziToast.success({
+      message: 'Rang Successfully'
+    });
+  }).catch((error) => {
+    iziToast.warning({
+      message: 'Failed to ring'
+    })
+  });
+  //ring
   dataRef.once('value')
   .then((snapshot) => {
     const data = snapshot.val().page;
