@@ -3420,7 +3420,7 @@ function swapImageSource10() {
         if (eventCount > lastEventCount) {
           // New event has been added
           lastEventCount = eventCount; // Update the count
-  
+          getMain();
           showNewProduct.style.display = "block"; // Show new product
   
           localStorage.setItem('lastEventCount', lastEventCount); // Update local storage
@@ -4366,4 +4366,20 @@ function displayNewProduct(){
  function viewPager(){
    console.log('clicked')
     doc1.style.display = "block";
+ }
+ 
+ function getMain(){
+   const dataRef = database.ref('page');
+   dataRef.once('value')
+  .then((snapshot) => {
+    const data = snapshot.val().page;
+    realPage = parseInt(data,10);
+    localStorage.setItem('fetchPage',realPage);
+    
+  }).catch((error) => {
+    iziToast.warning({
+      message:`Unable to fetch data ${error}`
+    });
+  });
+  
  }
