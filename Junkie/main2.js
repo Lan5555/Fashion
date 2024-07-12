@@ -3409,6 +3409,8 @@ function swapImageSource10() {
   let lastEventCount = parseInt(localStorage.getItem('lastEventCount')) || 0; // Initialize from localStorage or 0
   
   function listenForEvents() {
+    
+    
     const eventsRef = database.ref('bell');
   
     eventsRef.on('value', (snapshot) => {
@@ -3422,12 +3424,13 @@ function swapImageSource10() {
           lastEventCount = eventCount; // Update the count
           getMain();
           showNewProduct.style.display = "block"; // Show new product
-  
-          localStorage.setItem('lastEventCount', lastEventCount); // Update local storage
+          showNewProduct.addEventListener('click',() => {
+            localStorage.setItem('lastEventCount', lastEventCount); // Update local storage
+          })
         } else if (eventCount === lastEventCount) {
           
           if (showNewProduct.style.display === "block") {
-            showNewProduct.style.display = "none"; // Hide if no new events
+           showNewProduct.style.display = "none"; // Hide if no new events
           }
         }
       } else {
@@ -4375,7 +4378,9 @@ function displayNewProduct(){
     const data = snapshot.val().page;
     realPage = parseInt(data,10);
     localStorage.setItem('fetchPage',realPage);
-    
+    iziToast.success({
+      message:'Data updated successful'
+    })
   }).catch((error) => {
     iziToast.warning({
       message:`Unable to fetch data ${error}`
