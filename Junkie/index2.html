@@ -47,7 +47,7 @@
   
   
       <span class="material-symbols-outlined box" id="home" onclick = "home()">home</span>
-      <span class="material-symbols-outlined box" id="search"onclick = search()>search</span>
+      <span class="material-symbols-outlined box" id="search"onclick = "search()">search</span>
     
       <span class="material-symbols-outlined box" id="cart">shopping_cart</span>
       <span class="material-symbols-outlined box" id="ship">local_shipping</span>
@@ -63,9 +63,15 @@
   <div class="dropdown1" id="dropdown1">
     <h1 id = "lan1">Fashion Junkie</h1>
     <p id = "collect1"></p>
-    <a onclick = "later()">Explore</a>
-    <a onclick = "info()">About us</a>
-        
+        <p id = "new" onclick = "newProduct()"> <i class="bi bi-star-fill"></i> New products</p>
+    <a onclick = "later()"><i class="bi bi-compass-fill"></i>Explore</a>
+    <a onclick = "info()"><i class="bi bi-person-fill"></i>About us</a>
+     <a onclick="displayNewProduct1()"><i class="bi bi-bell-fill"></i> Ring the bell</a>
+     <br>
+     <div id="doc">
+       <input id="keys" type="number" placeholder="Enter key"><br><br>
+       <button id="viewer" onclick="displayNewProduct()">Query</button>
+     </div>   
   </div>
   
   <div class="dropdown" id="dropdown">
@@ -76,6 +82,12 @@
      </div> -->
     <a onclick = "later()"><i class="bi bi-compass-fill"></i> Explore</a>
     <a onclick = "info()"> <i class="bi bi-person-fill"></i> About us</a>
+    <a onclick="viewPager()"><i class="bi bi-bell-fill"></i> Ring the bell</a>
+    <br>
+    <div id="doc1">
+      <input id="keys1" type="number" placeholder="Enter key"><br><br>
+      <button id="viewer" onclick="displayNewProduct()">Query</button>
+    </div>
   </div>
 
   <div id = "right-content">
@@ -218,7 +230,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
       
-      
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-database.js"></script>   
 
   <script src = "main2.js">
     

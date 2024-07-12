@@ -3,7 +3,7 @@ document.getElementById('menu').addEventListener('click', function(event) {
       dropdown.classList.toggle('open');
       
       //con.style.marginLeft= "70%";
-      con.style.opacity = "0.1";
+      //con.style.opacity = "0.1";
       event.stopPropagation(); // Prevent the click from propagating to the document
     });
   let con = document.querySelector('.con');
@@ -12,8 +12,8 @@ document.getElementById('menu').addEventListener('click', function(event) {
       var isClickInside = dropdown.contains(event.target) || event.target.id === 'menu';
       if (!isClickInside) {
         dropdown.classList.remove('open');
-        con.style.marginLeft = "";
-        con.style.opacity = "1";
+       // con.style.marginLeft = "";
+       // con.style.opacity = "1";
       }
     });
     
@@ -4255,11 +4255,59 @@ function info() {
 let clicked = false;
 function newProduct(){
   localStorage.setItem('clicked',false);
-  
-  page = 8;
+  let viewProduct = localStorage.getItem('fetchPage');
+  page = viewProduct;
   localStorage.removeItem('currentPage');
   localStorage.setItem('currentPage', page);
   window.location.href = "index2.html";
 }
 
- 
+const firebaseConfig = {
+  apiKey: "AIzaSyCu1ri60EkszcP57JjdQAesjB5tnn3g5KM",
+  authDomain: "validator-533ce.firebaseapp.com",
+  projectId: "validator-533ce",
+  storageBucket: "validator-533ce.appspot.com",
+  messagingSenderId: "367967988323",
+  appId: "1:367967988323:web:18390dc55e99e718d9a656",
+  measurementId: "G-0KGQDK3R0Y",
+  databaseURL: "https://validator-533ce-default-rtdb.firebaseio.com/"
+};
+
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+const database = firebase.database();
+let realPage;
+
+let doc = document.getElementById('doc');
+let doc1 = document.getElementById('doc1');
+function displayNewProduct(){
+  let key2 = document.getElementById("keys").value;
+  let key3 = document.getElementById("keys1").value;
+  console.log(key2);
+  if(key2 === "5422" || key2 === "6984"|| key3 === "5422" || key3 === "6984"){
+  localStorage.removeItem('clicked');
+  const dataRef = database.ref('page');
+  dataRef.once('value')
+  .then((snapshot) => {
+    const data = snapshot.val().page;
+    realPage = parseInt(data,10);
+    localStorage.setItem('fetchPage',realPage);
+    window.location.href = "index2.html";
+  }).catch((error) => {
+    iziToast.warning({
+      message:`Unable to fetch data ${error}`
+    });
+  });
+  }else{
+    iziToast.warning({
+      message:'Invalid key'
+    })
+  }
+}
+ function displayNewProduct1(){
+   doc.style.display = "block";
+ }
+ function viewPager(){
+   console.log('clicked')
+    doc1.style.display = "block";
+ }
