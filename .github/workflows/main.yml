@@ -1,0 +1,30 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up environment
+        run: echo "FIREBASE_API_KEY=${{ secrets.ACCESS_KEY }}" >> $GITHUB_ENV
+
+      - name: Inject Firebase API Key
+        run: |
+          # Replace the placeholder in your JS file with the actual key
+          sed -i "s|FIREBASE_API_KEY_PLACEHOLDER|${{ secrets.ACCESS_KEY }}|g" Fashion/Junkie/main2.js
+
+      - name: Build and deploy
+        run: |
+          # Add your build and deploy steps here
+          # Example for a static site
+          # npm install
+          # npm run build
+          # npm run deploy
