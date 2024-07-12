@@ -19,7 +19,7 @@ jobs:
       - name: Inject Firebase API Key
         run: |
           # Replace the placeholder in your JS file with the actual key
-          sed -i "s|FIREBASE_API_KEY_PLACEHOLDER|${{ secrets.ACCESS_KEY }}|g" Fashion/Junkie/main2.js
+          sed -i "s|FIREBASE_API_KEY_PLACEHOLDER|${{ secrets.ACCESS_KEY }}|g" Junkie/main2.js
 
       - name: Build and deploy
         run: |
