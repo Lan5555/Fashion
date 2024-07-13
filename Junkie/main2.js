@@ -4379,7 +4379,7 @@ function displayNewProduct(){
     realPage = parseInt(data,10);
     localStorage.setItem('fetchPage',realPage);
     iziToast.success({
-      message:'Data updated successful'
+      message:'Data updated successfully'
     })
   }).catch((error) => {
     iziToast.warning({
