@@ -4,5 +4,11 @@
     "fileExt": "uploads/Link.jpg",
     "price": "40000.00",
     "description": "Quality shoes size 45-56"
+  },
+  {
+    "fileName": "Louisiana ",
+    "fileExt": "uploads/Screenshot_20240706-102442.jpg",
+    "price": "40000.00",
+    "description": "Quality shoes size 45-56"
   }
 ]
