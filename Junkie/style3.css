@@ -1208,7 +1208,10 @@ border:none;
 
 
 
-
+.bi-house-fill,.bi-search,.bi-cart-fill,.bi-truck,.bi-gear{
+  font-size: 22pt;
+  
+}
 
 
 
@@ -1220,6 +1223,7 @@ border:none;
 
 @media only screen and (max-width: 600px){
   body {
+    margin: 10px;
     
   }
    
@@ -1249,7 +1253,7 @@ border:none;
     #acc {
       position: absolute;
       right: 0;
-      margin-right: 10px;
+      margin-right: 20px;
       border: none;
       border-radius: 13px;
       box-shadow: 0 0 3px black;
@@ -1348,17 +1352,21 @@ border:none;
       margin-left: 6% !important;
       
       z-index:5;
+      
     }
 
 
     .box{
-      margin-right: 22px;
+      margin-right: 25px;
       left:0;
-      margin-left: 1px;
+      margin-left: 6px;
       border: none;
-      border-radius: 13px;
-      box-shadow: 0 0 4px black, 0 0 8px white, 0 0 100px lightblue;
+      border-radius: 2px;
+      height: 35px;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1),
+     0 5px 9px rgba(0, 0, 0, 0.08);
       z-index:5;
+      
     }
     .box:hover {
       color:red;
@@ -1366,16 +1374,36 @@ border:none;
     
     
     #names {
-      
-      position: fixed;
-      bottom:0;
-      
-    }
+  position: fixed; /* Positioning relative to allIcons */
+  bottom: 9px; /* Adjust as needed */
+  font-size: 16px; /* Font size */
+  color: #333; /* Text color */
+  
+ }
     #itemNames {
-      margin-left: 10px;
-      font-size: 12pt;
+      margin-right: 2px;
+      font-size: 11pt;
       font-family: 'playfair Display', serif;
+      color: white;
+      
     }
+.allIcons {
+  display: flex;
+  position: fixed;
+  bottom: 14px;
+  width: 84%;
+  
+  margin-right: 20px;
+  height:60px;
+  
+  background-color: #f8f9fa; /* Light background color */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1),
+  0 5px 19px rgba(0, 0, 0, 0.08);
+  background-color: black;
+  color:white;
+  transition: opacity 0.3s ease;
+}
     
     
 /* Keyframes for slide-in animation */
@@ -1395,14 +1423,17 @@ border:none;
   max-height: 546px;
   overflow-y: auto;
   transition: margin-left 0.3s ease, opacity 0.3s ease;
+  border-radius: 7px;
+  
 }
 
 
 
 .con2 {
-  max-width: 700px; /* Reduced width */
+  max-width: 100%;/* Reduced width */
   margin: 0 auto;
   transition: width 0.5s ease;
+  
 }
 
 .container {
@@ -1413,22 +1444,39 @@ border:none;
   transition: box-shadow 0.3s ease; /* Added transition */
 }
 
-.container:hover {
+.con2:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Box-shadow on hover */
 }
 
 /* Item styles */
 .item1 {
   border: none;
-  border-radius: 10px;
+  border-radius: 30px;
   padding: 20px;
-  margin-bottom: 20px;
+  margin: 5px;
+  margin-bottom: 30px;
   transition: transform 0.3s ease;
   animation: slideInFromRight 0.5s ease forwards; /* Animation on page load */
   opacity: 0; /* Start with opacity 0 */
   transition: opacity 0.5s ease, box-shadow 0.3s ease; /* Added box-shadow transition */
-  box-shadow: 0 0 2px black, 0 0 7px white, 0 0 6px black, 0 0 12px black;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1),
+  0 5px 9px rgba(0, 0, 0, 0.08);
+  
  
+}
+.item1:hover{
+  transform: translateY(-5px); /* Optional: slight lift on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 
+                0 12px 40px rgba(0, 0, 0, 0.2); /* Optional: enhanced shadow on hover */
+  
+}
+@keyframes moveUp {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-10px);
+  }
 }
 
 /* Hidden and visible states for animations */
@@ -1447,7 +1495,7 @@ border:none;
 /* Image styles */
 .item1 img {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 20px;
   
 }
 
@@ -1515,7 +1563,8 @@ border:none;
      
     }
     .up{
-      border-bottom: 1px solid;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1),
+      0 5px 9px rgba(0, 0, 0, 0.08);
       
     }
     
@@ -1593,7 +1642,7 @@ border:none;
 #Amount {
   height:25px;
   width:25px;
-  background-color: black;
+  background-color: white;
   border: 1px solid black;
   border-radius: 10px;
   box-shadow: 4px, 0px, 4px;
@@ -1606,6 +1655,7 @@ border:none;
   overflow: hidden;
   animation: slideIn1 0.3s ease forwards;
   z-index: 6;
+  transition: opacity 0.3s ease;
   
 }
 @keyframes slideIn1{
@@ -1620,12 +1670,13 @@ border:none;
 }
 }
 #num{
-  color:white;
+  color:black;
   margin-bottom: 50px;
   display: flex;
   justify-content: center;
   align-items:center;
   margin-top: 3px;
+  transition: opacity 0.3s ease;
 }
 
 #clear1,#clear2,#clear3,#clear4,#clear5,#clear6,#clear7,#clear8{
@@ -1675,6 +1726,14 @@ button{
         @keyframes spin {
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
+        }
+        
+        #menu{
+          border: none;
+          background-color: black;
+          border-radius: 5px;
+          box-shadow: 4px 0px 4px;
+          color:white;
         }
         
         #scrollToTopBtn {

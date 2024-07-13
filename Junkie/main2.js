@@ -4388,3 +4388,29 @@ function displayNewProduct(){
   });
   
  }
+ 
+ const allIcons = document.querySelector('.allIcons');
+ const mediaQuery = window.matchMedia("(max-width: 600px)");
+ let can = document.querySelector('.con');
+ let number3 = document.getElementById('Amount');
+ let number2 = document.getElementById('num');
+ 
+ let timeout;
+
+    con.addEventListener('scroll', () => {
+        if (mediaQuery.matches) {
+            allIcons.style.opacity = "0.1";
+            number3.style.opacity = "0.1";
+            number2.style.opacity = "0.1";
+
+            clearTimeout(timeout); // Clear the timeout if scrolling continues
+            timeout = setTimeout(() => {
+                allIcons.style.opacity = "1"; 
+                number3.style.opacity = "1";
+                number2.style.opacity = "1";// Reset opacity after scrolling stops
+            }, 200); // Adjust timeout duration as needed
+        } else {
+            allIcons.style.opacity = "1"; // Reset opacity immediately if not in media query
+        }
+    
+ });
