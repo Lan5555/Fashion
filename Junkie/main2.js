@@ -138,7 +138,7 @@ let info8 = document.getElementById("info8");
 let naira = "₦";
 let fileResources = [
   {
-  name:"Ruby rings", imageSrc: "lily.jpg", price: `N${4000}.00`
+  name:"Ruby rings", imageSrc: "lily.jpg", price: `${4000}.00`
   },
   {
     name:"secondTest",imageSrc:"jean.jpeg",price: `N${50000}.00`
@@ -171,49 +171,49 @@ let fileResources1 = [
   {//edit
     name: "Vans",
     imageSrc: "realShoes/shoevans.JPG",
-    price: `N${10000}.00`,
+    price: `₦${10000}.00`,
     description: "Brand: Vans, Size: 41-46, (Unboxed), Very comfortable and easy to wear"
   },
   {//edit
     name: "Louis Vuitton Sneakers",
     imageSrc: "realShoes/shoevuit.jpg",
-    price: `N${24000}.00`,
+    price: `₦${24000}.00`,
     description: "Size 42-46"
   },
   {
     name: "Airforce A",
     imageSrc: "realShoes/shoeairforce 1 A.JPG",
-    price: `N${15000}.00 (unboxed), N${16000}.00 (boxed)`,
+    price: `₦${15000}.00 (unboxed), ₦${16000}.00 (boxed)`,
     description: "Brand: Nike Airforce, Size: 38-43"
   },
   {
     name: "Airforce 1B",
     imageSrc: "realShoes/shoe airforce 1 B.JPG",
-    price: `N${13500}.00 (unboxed), N${15000}.00 (boxed)`,
+    price: `₦${13500}.00 (unboxed), N${15000}.00 (boxed)`,
     description: "Brand: Airforce 1, Size: 38-42"
   },
   {
     name: "Jordan A",
     imageSrc: "realShoes/shoejordanA.JPG",
-    price: `N${15000}.00 (unboxed), N${16000}.00 (boxed)`,
+    price: `₦${15000}.00 (unboxed), ₦${16000}.00 (boxed)`,
     description: "Brand: Jordan, Size: 38-43"
   },
   {
     name: "Retro",
     imageSrc: "realShoes/shoeretro.jpg",
-    price: `N${15000}.00`,
+    price: `₦${15000}.00`,
     description: "Brand: Adidas Retro, Size: 43-46, (Unboxed)"
   },
   {//edit
     name: "New Balance",
     imageSrc: "realShoes/shoenewbal.jpg",
-    price: `N${25000}.00`,
+    price: `₦${25000}.00`,
     description: "Brand: New Balance Sneakers, Size: 41-45, (Fully boxed)"
   },
   {//edit
     name: "Fashion shoes",
     imageSrc: "realShoes/shoefash.jpg",
-    price: `N${20000}.00`,
+    price: `₦${20000}.00`,
     description: "Brand: Fashion shoes, Size: 40-45"
   }
   ]
@@ -225,49 +225,49 @@ let fileResources1 = [
   {
     name: "Ogiy",
     imageSrc: "realShoes/shoeogiy.JPG",
-    price: `N${17500}.00`,
+    price: `₦${17500}.00`,
     description: "Brand: Ogiy, Size: 40-45, (Fully boxed)"
   },
   {
     name: "Naked Wolfe",
     imageSrc: "realShoes/shoe nak wolfe.JPG",
-    price: `N${23000}.00`,
+    price: `₦${23000}.00`,
     description: "Brand: Naked Wolfe, Size: 38-42, (Unboxed)"
   },
   {
     name: "Pinging Crocs",
     imageSrc: "slides/slidespcrocs.jpg",
-    price: `N${17000}.00`,
+    price: `₦${17000}.00`,
     description: "Brand: Pinging Crocs, Size: 49-46"
   },
   {
     name: "Addidas",
     imageSrc: "realShoes/shoeaddi.JPG",
-    price: `N${20000}.00`,
+    price: `₦${20000}.00`,
     description: "Brand: Adidas, Size: 42-46, (Unboxed)"
   },
   {
     name: "Supreme Airforce",
     imageSrc: "realShoes/shoesup1.JPG",
-    price: `N${23000}.00`,
+    price: `₦${23000}.00`,
     description: "Brand: Supreme Airforce, Size: 38-45, (Unboxed)"
   },
   {
     name: "BL",
     imageSrc: "realShoes/shoebl.JPG",
-    price: `N${13000}.00`,
+    price: `₦${13000}.00`,
     description: "New in, Size: 38-42, (Unboxed)"
   },
   {
     name: "Timberland Sneakers",
     imageSrc: "realShoes/shoetim.jpg",
-    price: `N${21000}.00`,
+    price: `₦${21000}.00`,
     description: "Brand: Timberland Sneakers, Size: 40-46"
   },
   {
     name: "Clarks (Corporate Shoe)",
     imageSrc: "realShoes/shoecope.JPG",
-    price: `N${44000}.00`,
+    price: `₦${44000}.00`,
     description: "Brand: Clarks (Corporate Shoe), Size: 40-46, (Fully boxed)"
   }
   ];
@@ -278,49 +278,49 @@ let fileResources1 = [
   {
     name: "Givenchy",
     imageSrc: "realShoes/shoegiveA.JPG",
-    price: `N${25000}.00`,
+    price: `₦${25000}.00`,
     description: "Brand: Givenchy, Size: 40-45"
   },
   {
     name: "Timberland Loafers",
     imageSrc: "realShoes/shoeloaf.jpg",
-    price: `N${24000}.00`,
+    price: `₦${24000}.00`,
     description: "Brand: Timberland Loafers, Size: 40-46"
   },
   {
     name: "Wallabees (Suede)",
     imageSrc: "realShoes/shoesued.jpg",
-    price: `N${18000}.00`,
+    price: `₦${18000}.00`,
     description: "Brand: Wallabees (Suede), Size: 40-46"
   },
   {
     name: "Wallabees (Navy Blue)",
     imageSrc: "realShoes/shoewall.jpg",
-    price: `N${18000}.00`,
+    price: `₦${18000}.00`,
     description: "Brand: Wallabees (Navy Blue), Size: 40-46"
   },
   {
     name: "Football Boots",
     imageSrc: "realShoes/shoefoot.jpg",
-    price: `N${14000}.00`,
+    price: `₦${14000}.00`,
     description: "Football Boots, Size: 40-45"
   },
   {
     name: "Celine",
     imageSrc: "slides/slidesceli.JPG",
-    price: `N${25000}.00`,
+    price: `₦${25000}.00`,
     description: "Brand: Celine (Carton Pam's), Size: 40-45"
   },
   {
     name: "Balmain",
     imageSrc: "slides/slidesbalman.JPG",
-    price: `N${25000}.00`,
+    price: `₦${25000}.00`,
     description: "Brand: Balmain (Carton Pam's), Size: 40-45"
   },
   {//edit
     name: "Hikers Crocs",
     imageSrc: "slides/slideshcrocs.jpg",
-    price: `N${19000}.00`,
+    price: `₦${19000}.00`,
     description: "Size: 41-45 Unboxed"
   }
   ];
@@ -331,49 +331,49 @@ let fileResources1 = [
   {
     name: "Givenchy SL",
     imageSrc: "slides/slidesgive.JPG",
-    price: `N${25000}.00`,
+    price: `₦${25000}.00`,
     description: "Brand: Givenchy (Carton Pam's), Size: 40-45"
   },
   {
     name: "Stock Pams",
     imageSrc: "slides/slidespams.jpg",
-    price: `N${8000}.00`,
+    price: `₦${8000}.00`,
     description: "Stock Pam's, Size: 40-45"
   },
   {
     name: "Crocs",
     imageSrc: "slides/slidescrocs.jpg",
-    price: `N${15000}.00`,
+    price: `₦${15000}.00`,
     description: "Brand: Crocs, Size: 40-45 (6-11)"
   },
   {
     name: "Literide Crocs",
     imageSrc: "slides/slidesride.jpg",
-    price: `N${16500}.00`,
+    price: `₦${16500}.00`,
     description: "Brand: Literide Crocs, Size: 40-45 (6-11)"
   },
   {
     name: "Tommy Hilfiger Slippers",
     imageSrc: "slides/slidestom.jpg",
-    price: `N${5000}.00`,
+    price: `₦${5000}.00`,
     description: "Brand: Tommy Hilfiger Slippers, Size: 41-45"
   },
   {
     name: "Nike Belt",
     imageSrc: "slides/slidesnike.jpg",
-    price: `N${7500}.00`,
+    price: `₦${7500}.00`,
     description: "Brand: Nike Belt, Size: 40-45"
   },
   {//edit
     name: "Jeans Short",
     imageSrc: "realTrousers/troserjeanshor.JPG",
-    price: `N${15000}.00`,
+    price: `₦${15000}.00`,
     description: "Quality Jeans Shorts"
   },
   {//edit
     name: "Jean Jacket",
     imageSrc: "realShirt/shirtjeanjac.jpg",
-    price: `N${21000}.00`,
+    price: `₦${21000}.00`,
     description: "Premium Jean Jacket"
   }
   ]
@@ -384,49 +384,49 @@ let fileResources1 = [
   {
     name: "Match Fit Jean",
     imageSrc: "marchingFits/matchfitjean.JPG",
-    price: `N${32000}.00`,
+    price: `₦${32000}.00`,
     description: "Quality Jean Matching Fit (Short Trouser)"
   },
   {//edit
     name: "Match fit Jean",
     imageSrc: "marchingFits/matchfitlong.jpg",
-    price: `N${32000}.00`,
+    price: `₦${32000}.00`,
     description: "Quality Matching fit(long trouser)"
   },
   {
     name: "Jean",
     imageSrc: "realTrousers/troserjeans.jpg",
-    price: `N${22000}.00`,
+    price: `₦${22000}.00`,
     description: "Premium Baggy Jeans"
   },
   {
     name: "Checker",
     imageSrc: "marchingFits/shirtcheck.JPG",
-    price: `N${10000}.00`,
+    price: `₦${10000}.00`,
     description: "Quality Checker Shirts"
   },
   {
     name: "Tees",
     imageSrc: "realShirt/shirttees.jpg",
-    price: `N${17000}.00`,
+    price: `₦${17000}.00`,
     description: "Quality Top Notch Tees"
   },
   {
     name: "Hoody",
     imageSrc: "realShirt/shirthoody.jpg",
-    price: `N${18000}.00`,
+    price: `₦${18000}.00`,
     description: "Quality Hoody"
   },
   {
     name: "Givenchy SH",
     imageSrc: "realShoes/shoevenchy.JPG",
-    price: `N${36000}.00`,
+    price: `₦${36000}.00`,
     description: "Brand: Givenchy, Size: 40-46"
   },
   {
     name: "Match Fit Short",
     imageSrc: "marchingFits/matchpfitshor.JPG",
-    price: `N${25000}.00`,
+    price: `₦${25000}.00`,
     description: "Brand: Balenciaga, Quality Matching Fit"
   }
   ]
@@ -437,49 +437,49 @@ let fileResources1 = [
   {//edit
     name: "Airforce1",
     imageSrc: "realShoes/shoe1.jpg",
-    price: `N${14000}.00`,
+    price: `₦${14000}.00`,
     description: "14000.00(Unboxed) 15000.00(boxed) Size: 38-42"
   },
   {
     name: "x Sor",
     imageSrc: "realShoes/shoedor.JPG",
-    price: `N${18000}.00`,
+    price: `₦${18000}.00`,
     description: "Quality Shoe x Sor, (Unboxed) Size: 41-45"
   },
   {
     name: "Dr. Martin's",
     imageSrc: "realShoes/shoeDrmart.JPG",
-    price: `N${45000}.00`,
+    price: `₦${45000}.00`,
     description: "Brand: Dr. Martin's, Size: 40-46"
   },
   {
     name: "Louis Vuitton Bigsole",
     imageSrc: "realShoes/shoelv.JPG",
-    price: `N${35000}.00`,
+    price: `₦${35000}.00`,
     description: "Brand: Louis Vuitton Bigsole, Size: 40-46"
   },
   {
     name: "Nike",
     imageSrc: "realShoes/shoenike.JPG",
-    price: `N${9000}.00`,
+    price: `₦${9000}.00`,
     description: "Brand: Nike, Size: 41-46"
   },
   {
     name: "Tees",
     imageSrc: "realShirt/shirtte.jpg",
-    price: `N${12000}.00`,
+    price: `₦${12000}.00`,
     description: "Quality Round Neck Tees"
   },
   {
     name: "Jean Jacket",
     imageSrc: "realShirt/shirtjac.jpg",
-    price: `N${22000}.00`,
+    price: `₦${22000}.00`,
     description: "Quality Jean Jacket"
   },
   {
     name: "Shorts",
     imageSrc: "realTrousers/trosershorts.jpg",
-    price: `N${12000}.00`,
+    price: `₦${12000}.00`,
     description: "Quality Shorts"
   }
   
@@ -491,49 +491,49 @@ let fileResources1 = [
   {
     name: "Timberland",
     imageSrc: "realShoes/shoetimber.JPG",
-    price: `N${48000}.00`,
+    price: `₦${48000}.00`,
     description: "Brand: Timberland, Grade A Timberland Boots, Size: 40-45"
   },
   {
     name: "Nike SB",
     imageSrc: "realShoes/shoenikeB.JPG",
-    price: `N${18000}.00`,
+    price: `₦${18000}.00`,
     description: "Brand: Nike SB, Size: 40-45"
   },
   {
     name: "Adidas Gazelle",
     imageSrc: "realShoes/shoegaze.JPG",
-    price: `N${22000}.00`,
+    price: `₦${22000}.00`,
     description: "Brand: Adidas Gazelle, Size: 40-47, (Boxed)"
   },
   {
     name: "Jordan 4",
     imageSrc: "realShoes/shoedan4.JPG",
-    price: `N${24000}.00`,
+    price: `₦${24000}.00`,
     description: "Brand: Jordan 4, Size: 40-46, (Boxed)"
   },
   {
     name: "Reebok",
     imageSrc: "realShoes/shoeree.JPG",
-    price: `N${17000}.00`,
+    price: `₦${17000}.00`,
     description: "Brand: Reebok, Size: 42-46"
   },
   {
     name: "NY",
     imageSrc: "realShoes/shoeny.JPG",
-    price: `N${23000}.00`,
+    price: `₦${23000}.00`,
     description: "Brand: NY, Size: 40-45, (Unboxed)"
   },
   {
     name: "Nike Zoom",
     imageSrc: "realShoes/shoezoom.JPG",
-    price: `N${18000}.00`,
+    price: `₦${18000}.00`,
     description: "Brand: Nike Zoom, Size: 40-45"
   },
   {
     name: "Airforce 1",
     imageSrc: "realShoes/shoeforce.JPG",
-    price: `N${18000}.00`,
+    price: `₦${18000}.00`,
     description: "Brand: Airforce 1, Size: 41-47"
   }
   
@@ -545,49 +545,49 @@ let fileResources1 = [
   {
     name: "Fashion Kicks",
     imageSrc: "realShoes/shoekicks.JPG",
-    price: `N${22000}.00`,
+    price: `₦${22000}.00`,
     description: "Fashion Kicks, Size: 40-45, (Fully boxed)"
   },
   {
     name: "Fendi Roma Big Sole",
     imageSrc: "realShoes/shoefendi.JPG",
-    price: `N${37000}.00`,
+    price: `₦${37000}.00`,
     description: "Brand: Fendi Roma Big Sole, Size: 40-45"
   },
   {
     name: "Balenciaga Sandals",
     imageSrc: "realShoes/shoebala.jpg",
-    price: `N${63000}.00`,
+    price: `₦${63000}.00`,
     description: "Brand: Balenciaga Sandals, Size: 40-45, (Fully boxed)"
   },
   {
     name: "Jordan High Dunk",
     imageSrc: "realShoes/shoedunk.jpg",
-    price: `N${15000}.00`,
+    price: `₦${15000}.00`,
     description: "Brand: Jordan High Dunk, Size: 38-42"
   },
   {
     name: "Balenciaga Sr",
     imageSrc: "realShirt/shirtciaga2.jpg",
-    price: `N${19000}.00`,
+    price: `₦${19000}.00`,
     description: "Balenciaga Shirt"
   },
   {
     name: "Premium Baggy Jeans",
     imageSrc: "realTrousers/troserpre.jpg",
-    price: `N${25000}.00`,
+    price: `₦${25000}.00`,
     description: "Premium Baggy Jeans, Quality or Nothing 🔥"
   },
   {
     name: "Quality XL",
     imageSrc: "realShirt/shirtess.jpg",
-    price: `N${18000}.00`,
+    price: `₦${18000}.00`,
     description: "Quality Shirts"
   },
   {
     name: "Sweater Vest",
     imageSrc: "realShirt/shirtves.jpg",
-    price: `N${21000}.00`,
+    price: `₦${21000}.00`,
     description: "Quality Sweater Vest"
   }
 ];
@@ -598,49 +598,49 @@ let fileResources9 = [
     {
         name: "Timberland",
         imageSrc: "updateShoe/shoetim.jpg",
-        price: `N${25000}.00`,
+        price: `₦${25000}.00`,
         description: "Size: 40-46, Fully boxed"
     },
     {
         name: "Billionaire Boot",
         imageSrc: "updateShoe/shoebill.jpg",
-        price: `N${43000}.00`,
+        price: `₦${43000}.00`,
         description: "Size: 39-46, Fully boxed"
     },
     {
         name: "Ferragamo Boot",
         imageSrc: "updateShoe/shoeferr.jpg",
-        price: `N${45000}.00`,
+        price: `₦${45000}.00`,
         description: "Size: 39-46, Fully boxed"
     },
     {
         name: "Hugo Boss Boot",
         imageSrc: "updateShoe/shoehugo.jpg",
-        price: `N${45000}.00`,
+        price: `₦${45000}.00`,
         description: "Size: 39-46, Fully boxed"
     },
     {
         name: "Dior Pam's",
         imageSrc: "updateShoe/shoedor.jpg",
-        price: `N${30000}.00`,
+        price: `₦${30000}.00`,
         description: "Size: 40-46, Fully boxed"
     },
     {
         name: "D&G",
         imageSrc: "updateShoe/shoedg.jpg",
-        price: `N${37000}.00`,
+        price: `₦${37000}.00`,
         description: "Size: 40-46, Fully boxed"
     },
     {
         name: "Leather jacket",
         imageSrc: "updateShirt/shirtleath.jpg",
-        price: `N${23000}.00`,
+        price: `₦${23000}.00`,
         description: "Quality Jackets"
     },
     {
         name: "Sweater shirt",
         imageSrc: "updateShirt/shirtswea.jpg",
-        price: `N${18000}.00`,
+        price: `₦${18000}.00`,
         description: "High Quality"
     }
 ];
@@ -1733,247 +1733,247 @@ let shoes = [
   {
     name: "Vans",
     imageSrc: "realShoes/shoevans.JPG",
-    price: `N${10000}.00`,
+    price: `₦${10000}.00`,
     description: "Brand: Vans, Size: 41-46, (Unboxed), Very comfortable and easy to wear"
   },
   {
     name: "Louis Vuitton Sneakers",
     imageSrc: "realShoes/shoevuit.jpg",
-    price: `N${24000}.00`,
+    price: `₦${24000}.00`,
     description: "Size 42-46"
   },
   {
     name: "Airforce A",
     imageSrc: "realShoes/shoeairforce 1 A.JPG",
-    price: `N${15000}.00 (unboxed), N${16000}.00 (boxed)`,
+    price: `₦${15000}.00 (unboxed), ₦${16000}.00 (boxed)`,
     description: "Brand: Nike Airforce, Size: 38-43"
   },
   {
     name: "Airforce 1B",
     imageSrc: "realShoes/shoe airforce 1 B.JPG",
-    price: `N${13500}.00 (unboxed), N${15000}.00 (boxed)`,
+    price: `₦${13500}.00 (unboxed), ₦${15000}.00 (boxed)`,
     description: "Brand: Airforce 1, Size: 38-42"
   },
   {
     name: "Jordan A",
     imageSrc: "realShoes/shoejordanA.JPG",
-    price: `N${15000}.00 (unboxed), N${16000}.00 (boxed)`,
+    price: `₦${15000}.00 (unboxed), N${16000}.00 (boxed)`,
     description: "Brand: Jordan, Size: 38-43"
   },
   {
     name: "Retro",
     imageSrc: "realShoes/shoeretro.jpg",
-    price: `N${15000}.00`,
+    price: `₦${15000}.00`,
     description: "Brand: Adidas Retro, Size: 43-46, (Unboxed)"
   },
   {
     name: "New Balance",
     imageSrc: "realShoes/shoenewbal.jpg",
-    price: `N${25000}.00`,
+    price: `₦${25000}.00`,
     description: "Brand: New Balance Sneakers, Size: 41-45, (Fully boxed)"
   },
   {
     name: "Ogiy",
     imageSrc: "realShoes/shoeogiy.JPG",
-    price: `N${17500}.00`,
+    price: `₦${17500}.00`,
     description: "Brand: Ogiy, Size: 40-45, (Fully boxed)"
   },
   {
     name: "Naked Wolfe",
     imageSrc: "realShoes/shoe nak wolfe.JPG",
-    price: `N${23000}.00`,
+    price: `₦${23000}.00`,
     description: "Brand: Naked Wolfe, Size: 38-42, (Unboxed)"
   },
   {
     name: "Addidas",
     imageSrc: "realShoes/shoeaddi.JPG",
-    price: `N${20000}.00`,
+    price: `₦${20000}.00`,
     description: "Brand: Adidas, Size: 42-46, (Unboxed)"
   },
   {
     name: "Supreme Airforce",
     imageSrc: "realShoes/shoesup1.JPG",
-    price: `N${23000}.00`,
+    price: `₦${23000}.00`,
     description: "Brand: Supreme Airforce, Size: 38-45, (Unboxed)"
   },
   {
     name: "BL",
     imageSrc: "realShoes/shoebl.JPG",
-    price: `N${13000}.00`,
+    price: `₦${13000}.00`,
     description: "New in, Size: 38-42, (Unboxed)"
   },
   {
     name: "Timberland Sneakers",
     imageSrc: "realShoes/shoetim.jpg",
-    price: `N${21000}.00`,
+    price: `₦${21000}.00`,
     description: "Brand: Timberland Sneakers, Size: 40-46"
   },
   {
     name: "Clarks (Corporate Shoe)",
     imageSrc: "realShoes/shoecope.JPG",
-    price: `N${44000}.00`,
+    price: `₦${44000}.00`,
     description: "Brand: Clarks (Corporate Shoe), Size: 40-46, (Fully boxed)"
   },
   {
     name: "Givenchy",
     imageSrc: "realShoes/shoegiveA.JPG",
-    price: `N${25000}.00`,
+    price: `₦${25000}.00`,
     description: "Brand: Givenchy, Size: 40-45"
   },
   {
     name: "Timberland Loafers",
     imageSrc: "realShoes/shoeloaf.jpg",
-    price: `N${24000}.00`,
+    price: `₦${24000}.00`,
     description: "Brand: Timberland Loafers, Size: 40-46"
   },
   {
     name: "Wallabees (Suede)",
     imageSrc: "realShoes/shoesued.jpg",
-    price: `N${18000}.00`,
+    price: `₦${18000}.00`,
     description: "Brand: Wallabees (Suede), Size: 40-46"
   },
   {
     name: "Wallabees (Navy Blue)",
     imageSrc: "realShoes/shoewall.jpg",
-    price: `N${18000}.00`,
+    price: `₦${18000}.00`,
     description: "Brand: Wallabees (Navy Blue), Size: 40-46"
   },
   {
     name: "Football Boots",
     imageSrc: "realShoes/shoefoot.jpg",
-    price: `N${14000}.00`,
+    price: `₦${14000}.00`,
     description: "Football Boots, Size: 40-45"
   },
   {//newUpdate
     name: "Timberland",
     imageSrc: "updateShoe/shoetim.jpg",
-    price: `N${25000}.00`,
+    price: `₦${25000}.00`,
     description: "Size: 40-46, Fully boxed"
   },
   {
     name: "Billionaire Boot",
     imageSrc: "updateShoe/shoebill.jpg",
-    price: `N${43000}.00`,
+    price: `₦${43000}.00`,
     description: "Size: 39-46, Fully boxed"
   },
   {
     name: "Ferragamo Boot",
     imageSrc: "updateShoe/shoeferr.jpg",
-    price: `N${45000}.00`,
+    price: `₦${45000}.00`,
     description: "Size: 39-46, Fully boxed"
   },
   {
     name: "Hugo Boss Boot",
     imageSrc: "updateShoe/shoehugo.jpg",
-    price: `N${45000}.00`,
+    price: `₦${45000}.00`,
     description: "Size: 39-46, Fully boxed"
   },
   {
     name: "Dior Pam's",
     imageSrc: "updateShoe/shoedor.jpg",
-    price: `N${30000}.00`,
+    price: `₦${30000}.00`,
     description: "Size: 40-46, Fully boxed"
   },
   {
     name: "D&G",
     imageSrc: "updateShoe/shoedg.jpg",
-    price: `N${37000}.00`,
+    price: `₦${37000}.00`,
     description: "Size: 40-46, Fully boxed"
    },//endUpdate
   {
     name: "Givenchy XL",
     imageSrc: "realShoes/shoevenchy.JPG",
-    price: `N${36000}.00`,
+    price: `₦${36000}.00`,
     description: "Brand: Givenchy, Size: 40-46"
   },
   {
     name: "Airforce1X",
     imageSrc: "realShoes/shoe1.jpg",
-    price: `N${14000}.00`,
+    price: `₦${14000}.00`,
     description: "14000.00(Unboxed) 15000.00(boxed)"
   },
   {
     name: "x Sor",
     imageSrc: "realShoes/shoedor.JPG",
-    price: `N${18000}.00`,
+    price: `₦${18000}.00`,
     description: "Quality Shoe x Sor, (Unboxed)"
   },
   {
     name: "Dr. Martin's",
     imageSrc: "realShoes/shoeDrmart.JPG",
-    price: `N${45000}.00`,
+    price: `₦${45000}.00`,
     description: "Brand: Dr. Martin's, Size: 40-46"
   },
   {
     name: "Louis Vuitton Bigsole",
     imageSrc: "realShoes/shoelv.JPG",
-    price: `N${35000}.00`,
+    price: `₦${35000}.00`,
     description: "Brand: Louis Vuitton Bigsole, Size: 40-46"
   },
   {
     name: "Nike",
     imageSrc: "realShoes/shoenike.JPG",
-    price: `N${9000}.00`,
+    price: `₦${9000}.00`,
     description: "Brand: Nike, Size: 41-46"
   },
   {
     name: "Timberland",
     imageSrc: "realShoes/shoetimber.JPG",
-    price: `N${48000}.00`,
+    price: `₦${48000}.00`,
     description: "Brand: Timberland, Grade A Timberland Boots, Size: 40-45"
   },
   {
     name: "Nike SB",
     imageSrc: "realShoes/shoenikeB.JPG",
-    price: `N${18000}.00`,
+    price: `₦${18000}.00`,
     description: "Brand: Nike SB, Size: 40-45"
   },
   {
     name: "Adidas Gazelle",
     imageSrc: "realShoes/shoegaze.JPG",
-    price: `N${22000}.00`,
+    price: `₦${22000}.00`,
     description: "Brand: Adidas Gazelle, Size: 40-47, (Boxed)"
   },
   {
     name: "Jordan 4",
     imageSrc: "realShoes/shoedan4.JPG",
-    price: `N${24000}.00`,
+    price: `₦${24000}.00`,
     description: "Brand: Jordan 4, Size: 40-46, (Boxed)"
   },
   {
     name: "Reebok",
     imageSrc: "realShoes/shoeree.JPG",
-    price: `N${17000}.00`,
+    price: `₦${17000}.00`,
     description: "Brand: Reebok, Size: 42-46"
   },
   {
     name: "NY",
     imageSrc: "realShoes/shoeny.JPG",
-    price: `N${23000}.00`,
+    price: `₦${23000}.00`,
     description: "Brand: NY, Size: 40-45, (Unboxed)"
   },
   {
     name: "Nike Zoom",
     imageSrc: "realShoes/shoezoom.JPG",
-    price: `N${18000}.00`,
+    price: `₦${18000}.00`,
     description: "Brand: Nike Zoom, Size: 40-45"
   },
   {
     name: "Airforce 1",
     imageSrc: "realShoes/shoeforce.JPG",
-    price: `N${18000}.00`,
+    price: `₦${18000}.00`,
     description: "Brand: Airforce 1, Size: 41-47"
   },
   {
     name: "Fashion Kicks",
     imageSrc: "realShoes/shoekicks.JPG",
-    price: `N${22000}.00`,
+    price: `₦${22000}.00`,
     description: "Fashion Kicks, Size: 40-45, (Fully boxed)"
   },
   {
     name: "Fendi Roma Big Sole",
     imageSrc: "realShoes/shoefendi.JPG",
-    price: `N${37000}.00`,
+    price: `₦${37000}.00`,
     description: "Brand: Fendi"
   }
   ];
@@ -1984,67 +1984,67 @@ let shoes = [
     {
       name: "Jean Jacket",
       imageSrc: "realShirt/shirtjeanjac.jpg",
-      price: `N${21000}.00`,
+      price: `₦${21000}.00`,
       description: "Premium Jean Jacket"
     },
     {
       name: "Checker",
       imageSrc: "marchingFits/shirtcheck.JPG",
-      price: `N${10000}.00`,
+      price: `₦${10000}.00`,
       description: "Quality Checker Shirts"
     },
     {
       name: "Tees",
       imageSrc: "realShirt/shirttees.jpg",
-      price: `N${17000}.00`,
+      price: `₦${17000}.00`,
       description: "Quality Top Notch Tees"
     },
     {
       name: "Hood",
       imageSrc: "realShirt/shirthoody.jpg",
-      price: `N${18000}.00`,
+      price: `₦${18000}.00`,
       description: "Quality Hoody"
     },//newUpdate
     {
        name: "Leather jacket",
        imageSrc: "updateShirt/shirtleath.jpg",
-       price: `N${23000}.00`,
+       price: `₦${23000}.00`,
        description: "Quality Jackets"
     },
     {
        name: "Sweater shirt",
        imageSrc: "updateShirt/shirtswea.jpg",
-       price: `N${18000}.00`,
+       price: `₦${18000}.00`,
        description: "High Quality"
     },//endUpdate
     {
       name: "Tees XL",
       imageSrc: "realShirt/shirtte.jpg",
-      price: `N${12000}.00`,
+      price: `₦${12000}.00`,
       description: "Quality Round Neck Tees"
     },
     {
       name: "Jean Jacket",
       imageSrc: "realShirt/shirtjac.jpg",
-      price: `N${22000}.00`,
+      price: `₦${22000}.00`,
       description: "Quality Jean Jacket"
     },
     {
       name: "Balenciaga",
       imageSrc: "realShirt/shirtciaga2.jpg",
-      price: `N${19000}.00`,
+      price: `₦${19000}.00`,
       description: "Balenciaga Shirt"
     },
     {
       name: "Quality Tees",
       imageSrc: "realShirt/shirtess.jpg",
-      price: `N${18000}.00`,
+      price: `₦${18000}.00`,
       description: "Quality Shirts"
     },
     {
       name: "Sweater Vest",
       imageSrc: "realShirt/shirtves.jpg",
-      price: `N${21000}.00`,
+      price: `₦${21000}.00`,
       description: "Quality Sweater Vest"
     }
   ];
@@ -2057,79 +2057,79 @@ let shoes = [
     {
       name: "Match Fit Jean",
       imageSrc: "marchingFits/matchfitjean.JPG",
-      price: `N${32000}.00`,
+      price: `₦${32000}.00`,
       description: "Quality Jean Matching Fit (Short Trouser)"
     },
     {
       name: "Match fit Jean",
       imageSrc: "marchingFits/matchfitlong.jpg",
-      price: `N${32000}.00`,
+      price: `₦${32000}.00`,
       description: "Quality Matching fit(long trouser)"
     },
     {
       name: "Match Fit Short",
       imageSrc: "marchingFits/matchpfitshor.JPG",
-      price: `N${25000}.00`,
+      price: `₦${25000}.00`,
       description: "Brand: Balenciaga, Quality Matching Fit"
     },
       {
         name: "Pinging Crocs",
         imageSrc: "slides/slidespcrocs.jpg",
-        price: `N${17000}.00`,
+        price: `₦${17000}.00`,
         description: "Brand: Pinging Crocs, Size: 49-46"
       },
       {
         name: "Celine (Carton Pam's)",
         imageSrc: "slides/slidesceli.JPG",
-        price: `N${25000}.00`,
+        price: `₦${25000}.00`,
         description: "Brand: Celine (Carton Pam's), Size: 40-45"
       },
       {
         name: "Balmian",
         imageSrc: "slides/slidesbalman.JPG",
-        price: `N${25000}.00`,
+        price: `₦${25000}.00`,
         description: "Brand: Balman (Carton Pam's), Size: 40-45"
       },
       {
         name: "Slides Givenchy (Carton Pam's)",
         imageSrc: "slides/slidesgive.JPG",
-        price: `N${25000}.00`,
+        price: `₦${25000}.00`,
         description: "Brand: Givenchy (Carton Pam's), Size: 40-45"
       },
       {
         name: "Stock Palms",
         imageSrc: "slides/slidespams.jpg",
-        price: `N${8000}.00`,
+        price: `₦${8000}.00`,
         description: "Stock Pam's, Size: 40-45"
       },
       {
         name: "Slides Crocs",
         imageSrc: "slides/slidescrocs.jpg",
-        price: `N${15000}.00`,
+        price: `₦${15000}.00`,
         description: "Brand: Crocs, Size: 40-45 (6-11)"
       },
       {
         name: "Literide Crocs",
         imageSrc: "slides/slidesride.jpg",
-        price: `N${16500}.00`,
+        price: `₦${16500}.00`,
         description: "Brand: Literide Crocs, Size: 40-45 (6-11)"
       },
       {
         name: "Tommy Hilfiger Slippers",
         imageSrc: "slides/slidestom.jpg",
-        price: `N${5000}.00`,
+        price: `₦${5000}.00`,
         description: "Brand: Tommy Hilfiger Slippers, Size: 41-45"
       },
       {
         name: "Nike Belt",
         imageSrc: "slides/slidesnike.jpg",
-        price: `N${7500}.00`,
+        price: `₦${7500}.00`,
         description: "Brand: Nike Belt, Size: 40-45"
       },
       {
         name: "Hikers Crocs",
         imageSrc: "slides/slideshcrocs.jpg",
-        price: `N${19000}.00`,
+        price: `₦${19000}.00`,
         description: "Size: 41-45 Unboxed"
       }
     ];
@@ -2141,37 +2141,37 @@ let shoes = [
     {
       name: "Jeans Short",
       imageSrc: "realTrousers/troserjeanshor.JPG",
-      price: `N${15000}.00`,
+      price: `₦${15000}.00`,
       description: "Quality Jeans Shorts"
     },
     {
       name: "Match Fit Jean",
       imageSrc: "marchingFits/matchfitjean.JPG",
-      price: `N${32000}.00`,
+      price: `₦${32000}.00`,
       description: "Quality Jean Matching Fit (Short Trouser)"
     },
     {
       name: "Match fit Jean",
       imageSrc: "marchingFits/matchfitlong.jpg",
-      price: `N${32000}.00`,
+      price: `₦${32000}.00`,
       description: "Quality Matching fit(long trouser)"
     },
     {
       name: "Jean",
       imageSrc: "realTrousers/troserjeans.jpg",
-      price: `N${22000}.00`,
+      price: `₦${22000}.00`,
       description: "Premium Baggy Jeans"
     },
     {
       name: "Shorts",
       imageSrc: "realTrousers/trosershorts.jpg",
-      price: `N${12000}.00`,
+      price: `₦${12000}.00`,
       description: "Quality Shorts"
     },
     {
       name: "Premium Baggy Jeans",
       imageSrc: "realTrousers/troserpre.jpg",
-      price: `N${25000}.00`,
+      price: `₦${25000}.00`,
       description: "Premium Baggy Jeans, Quality or Nothing 🔥"
     }
   ];
@@ -3193,97 +3193,97 @@ function swapImageSource10() {
         responses1.push({
           name: element.fileName,
           imageSrc: element.fileExt,
-          price: `N${element.price}`,
+          price: `₦${element.price}`,
           description: element.description
         });
       } else if (index >= 8 && index < 16) {
         responses2.push({
           name: element.fileName,
           imageSrc: element.fileExt,
-          price: `N${element.price}`,
+          price: `₦${element.price}`,
           description: element.description
         });
       } else if (index >= 16 && index < 24) {
         responses3.push({
           name: element.fileName,
           imageSrc: element.fileExt,
-          price: `N${element.price}`,
+          price: `₦${element.price}`,
           description: element.description
         });
       } else if (index >= 24 && index < 32) {
         responses4.push({
           name: element.fileName,
           imageSrc: element.fileExt,
-          price: `N${element.price}`,
+          price: `₦${element.price}`,
           description: element.description
         });
       } else if (index >= 32 && index < 40) {
         responses5.push({
           name: element.fileName,
           imageSrc: element.fileExt,
-          price: `N${element.price}`,
+          price: `₦${element.price}`,
           description: element.description
         });
       } else if (index >= 40 && index < 48) {
         responses6.push({
           name: element.fileName,
           imageSrc: element.fileExt,
-          price: `N${element.price}`,
+          price: `₦${element.price}`,
           description: element.description
         });
       } else if (index >= 48 && index < 56) {
         responses7.push({
           name: element.fileName,
           imageSrc: element.fileExt,
-          price: `N${element.price}`,
+          price: `₦${element.price}`,
           description: element.description
         });
       } else if (index >= 56 && index < 64) {
         responses8.push({
           name: element.fileName,
           imageSrc: element.fileExt,
-          price: `N${element.price}`,
+          price: `₦${element.price}`,
           description: element.description
         });
       } else if (index >= 64 && index < 72) {
         responses9.push({
           name: element.fileName,
           imageSrc: element.fileExt,
-          price: `N${element.price}`,
+          price: `₦${element.price}`,
           description: element.description
         });
       } else if (index >= 72 && index < 80) {
         responses10.push({
           name: element.fileName,
           imageSrc: element.fileExt,
-          price: `N${element.price}`,
+          price: `₦${element.price}`,
           description: element.description
         });
       } else if (index >= 80 && index < 88) {
         responses11.push({
           name: element.fileName,
           imageSrc: element.fileExt,
-          price: `N${element.price}`,
+          price: `₦${element.price}`,
           description: element.description
         });
       } else if (index >= 88 && index < 96) {
         responses12.push({
           name: element.fileName,
           imageSrc: element.fileExt,
-          price: `N${element.price}`,
+          price: `₦${element.price}`,
           description: element.description
         });
       } else if (index >= 96 && index < 104) {
         responses13.push({
           name: element.fileName,
           imageSrc: element.fileExt,
-          price: element.price,
+          price: `₦${element.price}`,
           description: element.description
         });
       }
     });
 
-    console.log('responses1:', responses1); // Log responses1 for verification
+    //console.log('responses1:', responses1); // Log responses1 for verification
 
     // Resolve the promise after processing the data
     return Promise.resolve();
