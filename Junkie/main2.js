@@ -3487,7 +3487,7 @@ window.onload = function (){
   document.querySelector('.holder').style.display = 'block';
   setTimeout(() => {
     document.querySelector('.holder').style.display = 'none';
-  },2000);
+  },200);
  
  if(localStorage.getItem('selectedColor') != null){
    let colored = localStorage.getItem('selectedColor');
