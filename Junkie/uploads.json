@@ -46,5 +46,11 @@
     "fileExt": "uploads/IMG-20240727-WA0039.jpg",
     "price": "6000.00.00",
     "description": "We tiled shoe"
+  },
+  {
+    "fileName": "XShorf",
+    "fileExt": "uploads/Screenshot_20240723-082711_2.jpg",
+    "price": "7777.00",
+    "description": "We tiled shoe"
   }
 ]
