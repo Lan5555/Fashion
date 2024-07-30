@@ -16,5 +16,11 @@
     "fileExt": "uploads/IMG-20240729-WA0017.jpg",
     "price": "20000.00",
     "description": "42-47"
+  },
+  {
+    "fileName": "Dr martins",
+    "fileExt": "uploads/IMG-20240729-WA0020.jpg",
+    "price": "55000.00",
+    "description": "40-45"
   }
 ]
