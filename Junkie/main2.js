@@ -229,10 +229,10 @@ let fileResources1 = [
     description: "Brand: Ogiy, Size: 40-45, (Fully boxed)"
   },
   {
-    name: "Naked Wolfe",
-    imageSrc: "realShoes/shoe nak wolfe.JPG",
-    price: `₦${23000}.00`,
-    description: "Brand: Naked Wolfe, Size: 38-42, (Unboxed)"
+    name: "AIRFORCE 1",
+    imageSrc: "realShoes/Airforce1B2.jpg",
+    price: `₦${19000}.00`,
+    description: "38 to 42 (Boldlace)"
   },
   {
     name: "Pinging Crocs",
