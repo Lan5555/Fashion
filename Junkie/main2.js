@@ -2301,14 +2301,14 @@ time =  setInterval(() => {
     switch (index) {
     case 1:
       img0.src = list10[0];
-      img1.src = list244[0];
+      //img1.src = list244[0];
       img2.src = list39[0];
       img3.src = list22[0];
       img7.src = list2[0];
       break;
     case 2:
       img0.src = list10[1];
-      img1.src = list244[1];
+    //  img1.src = list244[1];
       img2.src = list39[1];
       img3.src = list22[1];
       img7.src = list2[1];
