@@ -34,5 +34,11 @@
     "fileExt": "uploads/IMG-20240722-WA0002.jpg",
     "price": "40000.00",
     "description": "40-46"
+  },
+  {
+    "fileName": "Shoe",
+    "fileExt": "uploads/IMG-20240730-WA0019.jpg",
+    "price": "11000.00",
+    "description": "41-46"
   }
 ]
