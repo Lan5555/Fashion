@@ -187,6 +187,7 @@ font-family: 'playfair Display', serif;
   text-decoration: none;
   margin: 10px 0;
   font-family: 'playfair Display', serif;
+  cursor: pointer;
 }
 
 .dropdown a:hover {
@@ -362,8 +363,9 @@ button#next:hover {
  
 }
 .up{
-  border-bottom: 1px solid;
-  
+    
+  box-shadow: 0 0.15rem 3.75rem 0 rgb(33 40 50 / 15%);
+  height: 50px;
 }
 
 a{
@@ -618,11 +620,14 @@ border:none;
 .box {
   margin: 0 20px; /* Adjust spacing between icons */
   border: none;
-  border-radius: 13px;
-  box-shadow: 0 0 4px black, 0 0 8px white, 0 0 100px lightblue;
+  
+  box-shadow: 0 0.15rem 3.75rem 0 rgb(33 40 50 / 15%);
   font-size: 24px; /* Adjust icon size if necessary */
+  cursor:pointer;
 }
-
+.box:hover{
+  color: red;
+}
 
 #names {
   
@@ -790,6 +795,7 @@ font-family: 'playfair Display', serif;
   text-decoration: none;
   margin: 10px 0;
   font-family: 'playfair Display', serif;
+  cursor: pointer;
 }
 
 .dropdown a:hover {
@@ -957,8 +963,8 @@ button#next:hover {
  
 }
 .up{
-  border-bottom: 1px solid;
-  
+  box-shadow: 0 0.15rem 3.75rem 0 rgb(33 40 50 / 15%);
+  height: 50px;
 }
 
 a{
@@ -1170,7 +1176,9 @@ border:none;
   box-shadow: 0 0 4px black, 0 0 8px white, 0 0 100px lightblue;
   font-size: 24px; /* Adjust icon size if necessary */
 }
-
+.box:hover{
+  color: red;
+}
 
 
 #names {
