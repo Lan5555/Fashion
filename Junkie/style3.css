@@ -1173,8 +1173,8 @@ border:none;
   margin: 0 20px; /* Adjust spacing between icons */
   border: none;
  
-  box-shadow: 0 0 4px black, 0 0 8px white, 0 0 100px lightblue;
-  font-size: 24px; /* Adjust icon size if necessary */
+  box-shadow: 0 0.15rem 3.75rem 0 rgb(33 40 50 / 15%);
+  font-size: 20px; /* Adjust icon size if necessary */
 }
 .box:hover{
   color: red;
