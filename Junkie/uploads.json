@@ -52,5 +52,11 @@
     "fileExt": "uploads/imagecompressor.zip",
     "price": "65000.00",
     "description": "40-45"
+  },
+  {
+    "fileName": "Nike Airforce One",
+    "fileExt": "uploads/IMG-20240803-WA0034.jpg",
+    "price": "22000.00",
+    "description": "42-46"
   }
 ]
