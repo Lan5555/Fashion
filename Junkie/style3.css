@@ -1233,6 +1233,7 @@ border:none;
     margin: 10px;
     
   }
+  
    
    #new{
      font-family:"playfair Display",serif;
@@ -1402,7 +1403,7 @@ border:none;
   display: flex;
   position: fixed;
   bottom: 14px;
-  width: 84%;
+  width: 81%;
   
   margin-right: 20px;
   height:60px;
