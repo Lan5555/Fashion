@@ -3441,25 +3441,86 @@ function swapImageSource10() {
   
   // Call this function once to start listening
 
+  //Shuffle Pages
+  let shufflePagesNum = [];
+   
+   function shufflePages2() {
+     const dataRef = database.ref('page');
+     const dataRef2 = database.ref('shuffle');
+     dataRef2.once('value')
+     .then((snapshot) => {
+       const shuffleValue = snapshot.val().shuffle;
+       if(shuffleValue){
+     //newCatch
+     dataRef.once('value')
+       .then((snapshot) => {
+         const data = snapshot.val().page;
+         const num = parseInt(data, 10);
+         if (!isNaN(num)) {
+           for (let i = 0; i <= num; i++) {
+             shufflePagesNum.push(i);
+           }
+           let randomPage = Math.floor(Math.random() * shufflePagesNum.length);
+           page = shufflePagesNum[randomPage];
+           localStorage.setItem('currentPage',page);
+         } else {
+           iziToast.warning({
+             message: 'Invalid page number retrieved'
+           });
+         }
+       })
+       .catch((error) => {
+         iziToast.warning({
+           message: 'Unable to retrieve page'
+         });
+       });
+       }else{
+         
+       }
+       //catch
+     }).catch((error) => {
+       iziToast.warning({
+         message: 'Unable to retrieve page'
+       });
+     });
+   }
   
+  //Shuffle Pages
 
 
   
   //window.onload()
 window.onload = function (){
+  if(localStorage.getItem('bell') != null){
+    let acc = document.getElementById('acc');
+    acc.src = "https://cdn-icons-png.flaticon.com/512/1827/1827312.png";
+  }
+  if(localStorage.getItem('checked') == null){
+    localStorage.setItem('checked','unchecked');
+  }else{
+    
+  }
+  if(localStorage.getItem('checked') == 'checked'){
+    checkBox.checked = true;
+  }else{
+  shufflePages2();
+  }
   wait();
   fetchData();
   listenForEvents();
+  fetchDetails();
   let colors = ["blue","green","pink","yellow"]
   //new-product
   
   let productText = document.querySelector('.product-text');
   let vibrate = document.querySelector('.vibrate');
+  let head = document.querySelector('.head');
 //  let icon = document.querySelector('.badge');
   
   setInterval(() => {
     let lan = Math.floor(Math.random() * colors.length);
     productText.style.color = colors[lan];
+    head.style.color = colors[lan];
     vibrate.style.color = colors[lan];
   },200);
   
@@ -4223,7 +4284,11 @@ colorForm.addEventListener('change', function() {
 const backer = document.getElementById('backer');
 backer.addEventListener('click', function() {
 // Go back or perform another action
+ul.style.display = "block";
+toggle.style.display = "none";
+backColor.style.display = "none";
 pop.style.display = "none";
+
 });
 
 function coming (){
@@ -4231,6 +4296,7 @@ function coming (){
     title:'Coming soon'
   });
 }
+
 
 let details1 = document.querySelector('.details1');
 let details2 = document.querySelector('.details2');
@@ -4413,4 +4479,58 @@ function displayNewProduct(){
             allIcons.style.opacity = "1"; // Reset opacity immediately if not in media query
         }
     
+ });
+ 
+ let bell = false;
+ function coming1(){
+   localStorage.setItem('bell',bell);
+   let acc = document.getElementById('acc');
+   let notification = document.querySelector('.notifications');
+   notification.style.display = "block";
+   acc.src = "https://cdn-icons-png.flaticon.com/512/1827/1827312.png";
+ }
+ function exit(){
+   let notification = document.querySelector('.notifications');
+   notification.style.display = "none";
+ }
+ 
+ function fetchDetails(){
+   let info = document.querySelector('.details');
+   const dataRef = database.ref('details');
+   dataRef.once('value')
+   .then((snapshot) => {
+     snapshot.forEach(childSnapShot => {
+       const data = childSnapShot.val().notification;
+       info.innerHTML += `<li>${data}</li>`;
+     })
+   })
+ }
+ let ul = document.querySelector('.ull');
+ let toggle = document.querySelector('.toggle');
+ let backColor = document.querySelector('.backColor');
+ function Bg(){
+   
+   ul.style.display = "none";
+   backColor.style.display = "block";
+ }
+ function Td(){
+   
+  ul.style.display = "none";
+  toggle.style.display = "block";
+ }
+ let checkBox = document.querySelector('.checkBox');
+ checkBox.addEventListener('change', function() {
+   if (this.checked) {
+     localStorage.setItem('checked', 'checked');
+     iziToast.success({
+       message: 'Success',
+       color: 'black'
+     });
+   } else {
+     localStorage.setItem('checked', 'unchecked');
+      iziToast.success({
+        message: 'Success',
+        color: 'black'
+      });
+   }
  });

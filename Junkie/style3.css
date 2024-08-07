@@ -3,6 +3,21 @@
     overflow: auto;
     
   }
+  
+  .head{
+    display:none;
+  }
+  .notifications button {
+    margin-left: 35px;
+    padding: 10px;
+    z-index: 999;
+    background-color: black;
+    width:80%;
+    position: absolute;
+    bottom: 20px;
+    color: white;
+  
+  }
   #keys{
   border-radius: 10px;
   box-shadow: 0 0 4px white, 0 0 3px black, 0 0 8px grey;
@@ -70,7 +85,7 @@
 #pop{
   height:400px;
   width: 70%;
-  background-color: white;
+  
   box-shadow: 0 0 4px black, 0 0 8px white, 0 0 6px black;
   border-radius: 10px;
   display: none;
@@ -113,17 +128,9 @@ font-family: 'playfair Display', serif;
   right:0;
   margin-right: 16%;
   z-index: 0;
-  margin-top: 10px;
-  border:0.5px solid black;
-  border-radius: 6px;
-  box-shadow: 0 0 3px black, 0 0 5px white, 0 0 7px;
-  backdrop-filter: blur(3px);
-  font-family: 'playfare Display',serif;
-  color: white;
-  text-shadow: 4px,6px,4px;
-  width:15%;
+  margin-top: 15px;
   display:none;
-  background-color: black;
+ 
   
 
 }
@@ -139,9 +146,8 @@ font-family: 'playfair Display', serif;
   position: absolute;
   right: 0;
   margin-right: 10px;
-  border: none;
-  border-radius: 13px;
-  box-shadow: 0 0 3px black;
+  margin-top: 10px;
+  z-index: 999;
 }
 
 .dropdown {
@@ -163,7 +169,10 @@ font-family: 'playfair Display', serif;
   left: 0;
   width: 230px;
   height: 100%;
-  background-color: black;
+  background-image: url('lily2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   color: white;
   padding: 20px;
   display:block;
@@ -340,14 +349,11 @@ button#next:hover {
   margin-left: 85px;
   margin-top: 1.9%;
   position:absolute;
-  border-radius: 9px;
-  box-shadow: 0 0 3px black, 0 0 5px white, 0 0 19px black;
-  backdrop-filter: blur(13px);
   font-family: 'playfare Display',serif;
   color: white;
-  text-shadow: 4px,6px,4px;
-  z-index:5;
-  background-color: black;
+  z-index: 5;
+  font-size: 9px;
+  display: inline;
 }
 #frame{
   width:100%;
@@ -721,15 +727,7 @@ font-family: 'playfair Display', serif;
   right:0;
   margin-right: 20%;
   z-index: 0;
-  margin-top: 10px;
-  border:0.5px solid black;
-  border-radius: 6px;
-  box-shadow: 0 0 3px black, 0 0 5px white, 0 0 7px;
-  backdrop-filter: blur(3px);
-  font-family: 'playfare Display',serif;
-  color: white;
-  text-shadow: 4px,6px,4px;
-  width:15%;
+  margin-top: 15px;
   display:none;
   
 
@@ -746,10 +744,8 @@ font-family: 'playfair Display', serif;
   position: absolute;
   right: 0;
   margin-right: 10px;
-  border: none;
-  border-radius: 13px;
-  box-shadow: 0 0 3px black;
-  
+  margin-top: 10px;
+  z-index: 999;
 }
 
 .dropdown {
@@ -771,7 +767,10 @@ font-family: 'playfair Display', serif;
   left: 0;
   width: 230px;
   height: 100%;
-  background-color: black;
+  background-image: url('lily2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   color: white;
   padding: 20px;
   display:block;
@@ -942,16 +941,13 @@ button#next:hover {
 #work{
 
   margin-left: 20%;
-  z-index: 0;
-  margin-top: 4%;
+  z-index: 5;
+  margin-top: 3%;
   position: absolute;
-  border-radius: 9px;
-  box-shadow: 0 0 3px black, 0 0 5px black, 0 0 20px black;
-  backdrop-filter: blur(13px);
   font-family: 'playfare Display',serif;
-  background-color: black;
-  color: white;
-  text-shadow: 4px,6px,4px;
+  color: black;
+  font-size:9px;
+  display: inline;
 }
 #frame{
   width:100%;
@@ -1045,8 +1041,8 @@ cursor: pointer
 }
 
 #Amount {
-height:25px;
-width:25px;
+height:20px;
+width:20px;
 background-color: black;
 border: 1px solid black;
 border-radius: 10px;
@@ -1099,16 +1095,16 @@ box-shadow: 4px, 0px, 4px;
 
 button{
 border: none;
-background-color: black;
+background-color: grey;
 border-radius: 10px;
 box-shadow: 0 0 4px white, 0 0 6px black, 0 0 8px lightblue;
 color:white;
-height:33px;
 backdrop-filter: blur(200px);
     -webkit-backdrop-filter: blur(190px);
     font-family:'playfair Display', serif;
 margin-left: 10%;
 margin-bottom: 5%;
+padding: 10px;
 }
 
 #info1,#info2,#info3,#info4,#info5,#info6,#info7,#info8 {
@@ -1258,16 +1254,19 @@ border:none;
       
       
     }
+    .head{
+      display: none;
+    }
 
     #acc {
       position: absolute;
       right: 0;
       margin-right: 20px;
-      border: none;
-      border-radius: 13px;
-      box-shadow: 0 0 3px black;
       
+      margin-top: 10px;
+     
     }
+    
 
     .dropdown {
       position: fixed;
@@ -1386,14 +1385,15 @@ border:none;
   position: fixed; /* Positioning relative to allIcons */
   bottom: 9px; /* Adjust as needed */
   font-size: 16px; /* Font size */
-  color: #333; /* Text color */
+  color: black; /* Text color */
   
  }
     #itemNames {
       margin-right: 2px;
       font-size: 11pt;
       font-family: 'playfair Display', serif;
-      color: white;
+      color: black;
+      
       
     }
 .allIcons {
@@ -1404,13 +1404,11 @@ border:none;
   
   margin-right: 20px;
   height:60px;
-  
-  background-color: #f8f9fa; /* Light background color */
   border-radius: 10px; /* Rounded corners */
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1),
   0 5px 19px rgba(0, 0, 0, 0.08);
-  background-color: black;
-  color:white;
+  background-color: white;
+  color:black;
   transition: opacity 0.3s ease;
 }
     
@@ -1520,13 +1518,15 @@ border:none;
 
 /* Button styles */
 .item1 button {
-  background-color: black;
-  color: #fff;
+  background-color: blueviolet;
+  color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 10px;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease; /* Added transition */
+  box-shadow: 0 0.15rem 3.75rem 0 rgb(33 40 50 / 15%);
+  font-size: 9pt;
 }
 
 .item1 button:hover {
@@ -1535,33 +1535,23 @@ border:none;
     #work{
       position: fixed;
       top:0;
-      margin-left: 23%;
+      margin-left: 73%;
       z-index: 0;
-      margin-top: 10px;
-      border:0.5px solid black;
-      border-radius: 6px;
-      box-shadow: 0 0 3px black, 0 0 5px white, 0 0 7px;
-      backdrop-filter: blur(3px);
-      font-family: 'playfare Display',serif;
-      color: white;
-      text-shadow: 4px,6px,4px;
-      
+      margin-top: 20px;
+      color:black;
+      background-color: transparent;
+      font-family: 'playfair Display',serif;
+      display: inline;
+      font-size: 9px;
     }
     
     #returner {
       
       position: fixed;
       top:0;
-      margin-left: 55%;
+      margin-left: 60%;
       z-index: 0;
-      margin-top: 10px;
-      border:0.5px solid black;
-      border-radius: 6px;
-      box-shadow: 0 0 3px black, 0 0 5px white, 0 0 7px;
-      backdrop-filter: blur(3px);
-      font-family: 'playfare Display',serif;
-      color: white;
-      text-shadow: 4px,6px,4px;
+      margin-top: 20px;
       display:none;
     
     }
@@ -1649,15 +1639,15 @@ border:none;
 }
 
 #Amount {
-  height:25px;
-  width:25px;
-  background-color: white;
-  border: 1px solid black;
+  height:18px;
+  width:18px;
+  background-color: red;
+  border: 1px solid red;
   border-radius: 10px;
   box-shadow: 4px, 0px, 4px;
   position: absolute;
   bottom: 0;
-  margin-bottom: 50px;
+  margin-bottom: 52px;
   margin-left: 38%;
   color:white;
   display:none;
@@ -1679,13 +1669,11 @@ border:none;
 }
 }
 #num{
-  color:black;
-  margin-bottom: 50px;
-  display: flex;
-  justify-content: center;
-  align-items:center;
-  margin-top: 3px;
+  color:white;
+  margin-top: 2px;
   transition: opacity 0.3s ease;
+  text-align: center;
+  font-size: 10pt;
 }
 
 #clear1,#clear2,#clear3,#clear4,#clear5,#clear6,#clear7,#clear8{
@@ -1718,6 +1706,8 @@ button{
 
 #info1,#info2,#info3,#info4,#info5,#info6,#info7,#info8 {
   font-family: 'playfair Display', serif;
+  color: blueviolet;
+  font-size: 10pt;
 }
 
 
@@ -1738,11 +1728,7 @@ button{
         }
         
         #menu{
-          border: none;
-          background-color: black;
-          border-radius: 5px;
-          box-shadow: 4px 0px 4px;
-          color:white;
+          padding:10px;
         }
         
         #scrollToTopBtn {
@@ -1782,7 +1768,6 @@ iframe{
 #pop{
   height:400px;
   width: 70%;
-  background-color: white;
   box-shadow: 0 0 4px black, 0 0 8px white, 0 0 6px black;
   border-radius: 10px;
   display: none;
@@ -1919,6 +1904,26 @@ font-family: 'playfair Display', serif;
 #doc1{
   display: none;
 }
+.head{
+  color: blueviolet;
+  text-align: left;
+  margin-left: 55px;
+  font-size: 15pt;
+  display: flex;
+  font-family: 'Brush Script MT', 'Lucida Handwriting', cursive;
+  position: absolute;
+  top:7px;
+}
+.notifications button {
+  margin-left: 28px;
+  padding: 10px;
+  z-index: 999;
+  background-color: black;
+  width:80%;
+  position: absolute;
+  bottom: 20px;
+  color: white;
+  }
 
 }
 
@@ -1989,4 +1994,59 @@ font-family: 'playfair Display', serif;
 
 #new{
   cursor:pointer;
+}
+.iconSize{
+  width:26px;
+  height:26px;
+  display: inline;
+}
+.iconSize2{
+  width:30px;
+  height:30px;
+  padding: 5px;
+  margin-right: 18px;
+}
+
+.notifications{
+  height:600px;
+  width:90%;
+  margin:10px;
+  background-color: white;
+  border:none;
+  border-radius: 5px;
+  animation:slideNot 0.3s ease-in-out;
+  display: none;
+  z-index:9999;
+  position: fixed;
+  top:0;
+  box-shadow: 0 0.15rem 3.75rem 0 rgb(33 40 50 / 15%);
+  transition: all 0.3s ease-in-out;
+}
+.notifications li{
+  padding: 10px;
+}
+
+.notifications button:hover{
+  background-color: blue;
+}
+@keyframes slideNot{
+  from {
+    transform: translateY(-40px);
+  } to {
+    transform: translateY(0px);
+  }
+}
+.backColor{
+  display: none;
+}
+.toggle{
+  display: none;
+}
+
+
+#pop li{
+  color: white;
+  text-align: left;
+  padding: 10px;
+  margin: 10px;
 }

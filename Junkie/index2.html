@@ -21,18 +21,25 @@
 
 </head>
 <body>
-
+  <div class = "notifications">
+    <ul class = "details">
+     
+    </ul>
+    <button id = "btn3" onclick="exit()">Okay</button>
+  </div>
+  
   <div class = "up">
-  <span class="material-symbols-outlined" id="menu">clear_all</span>
+  <span <img src = "https://cdn-icons-png.flaticon.com/512/10613/10613684.png" id="menu" class = "iconSize"></span>
+  <span <h1 class = "head">Fashion Junkie</h1>
   <div class = "new-product">
       <span class="material-icons-round vibrate" onclick="newProduct()">inventory_2</span>
       <span class="product-text">New products</span>
   </div>
-  <span class="material-symbols-outlined" id="acc" onclick = "coming()">account_circle</span>
-  <i class = "material-icons" id = "star">star</i>
+  <span><img src="https://cdn-icons-png.flaticon.com/512/1182/1182718.png" id="acc" onclick = "coming1()" class = "iconSize"></span>
+ <!-- <i class = "material-icons" id = "star">star</i> -->
   
   </div>
-  <button id = "work"><i class="bi bi-grid"></i>Categories</button>
+  <a id = "work"><img src = "https://cdn-icons-png.flaticon.com/512/5000/5000286.png" class = "iconSize"><br></a>
   
   
   <div id = "cat">
@@ -46,12 +53,12 @@
   
   
   <div class = "allIcons">
-      <span class="bi bi-house-fill box" id="home" onclick = "home()"></span>
-      <span class="bi bi-search box" id="search"onclick = "search()"></span>
+      <span  id="home" onclick = "home()"><img src = "https://cdn-icons-png.flaticon.com/512/10473/10473299.png" class = "iconSize2"</span>
+      <span id="search"onclick = "search()"><img src = "https://cdn-icons-png.flaticon.com/512/639/639375.png" class = "iconSize2"></span>
     
-      <span class="bi bi-cart-fill box" id="cart"></span>
-      <span class="bi bi-truck box" id="ship"></span>
-      <span class="bi bi-gear box" id="set" onclick="settings()"></span>
+      <span id="cart"><img src = "https://cdn-icons-png.flaticon.com/512/4290/4290854.png" class = "iconSize2"</span>
+      <span id="ship"><img src = "https://cdn-icons-png.flaticon.com/512/9561/9561688.png" class = "iconSize2"</span>
+      <span id="set" onclick="settings()"><img src = "https://cdn-icons-png.flaticon.com/512/627/627495.png" class = "iconSize2"</span>
     </div>
   
   
@@ -96,7 +103,7 @@
   </div>
   
   
-    <button id = "returner"><i class="bi bi-box-arrow-in-left"></i>Back</button>
+    <a id = "returner"><img src = "https://cdn-icons-png.flaticon.com/512/13883/13883936.png" class = "iconSize"></a>
  <div class="container con2">
   <div class="con">
     
@@ -198,31 +205,41 @@
 
 
   <div id="pop">
-    <h5 class="change">Change Background color</h5>
-    <form id="colorForm">
-      <input type="radio" id="blue" name="color" value="lightblue">
-      <label for="blue" class="color-label">Blue</label><br>
+          <ul class="ull">
+            <li onclick="Bg()">Change background Color</li>
+            <li onclick="Td()">Toggle Display</li>
+          </ul>
+          <form id="colorForm">
+              <div class="backColor">
+                <input type="radio" id="blue" name="color" value="lightblue">
+                <label for="blue" class="color-label">Blue</label><br>
       
-      <input type="radio" id="grey" name="color" value="grey">
-      <label for="grey" class="color-label">Grey</label><br>
+                <input type="radio" id="grey" name="color" value="grey">
+                <label for="grey" class="color-label">Grey</label><br>
       
-      <input type="radio" id="brown" name="color" value="pink">
-      <label for="pink" class="color-label">Pink</label><br>
+                <input type="radio" id="brown" name="color" value="pink">
+                <label for="pink" class="color-label">Pink</label><br>
       
-      <input type="radio" id="white" name="color" value="white">
-      <label for="white" class="color-label">White</label><br>
+                <input type="radio" id="white" name="color" value="white">
+                <label for="white" class="color-label">White</label><br>
       
-      <input type="radio" id="red" name="color" value="lightgreen">
-      <label for="green" class="color-label">Green</label><br>
+                <input type="radio" id="red" name="color" value="lightgreen">
+                <label for="green" class="color-label">Green</label><br>
       
-      <input type="radio" id="yellow" name="color" value="lightyellow">
-      <label for="yellow" class="color-label">Yellow</label><br>
+                <input type="radio" id="yellow" name="color" value="lightyellow">
+                <label for="yellow" class="color-label">Yellow</label><br>
+              </div>
+             
     </form>
+     <div class="toggle">
+       <br><br><br><br>
+     <label for = "checkbox" style = "color:white; padding:10px; margin:10px; text-align: center; margin-top: 30%;">Random Display</label><input type="checkbox" class = "checkBox">
+     </div>
     <p id="backer"><-</p>
   </div>
 
-<div class = "holder">
-<div class = "loader"></div>
+<div class="holder">
+  <div class="loader"></div>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/izitoast/dist/js/iziToast.min.js"></script>
