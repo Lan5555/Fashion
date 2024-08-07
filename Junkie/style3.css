@@ -631,6 +631,7 @@ border:none;
   box-shadow: 0 0.15rem 3.75rem 0 rgb(33 40 50 / 15%);
   font-size: 24px; /* Adjust icon size if necessary */
   cursor:pointer;
+  z-index: 9999;
 }
 .box:hover{
   color: red;
@@ -1172,6 +1173,7 @@ border:none;
  
   box-shadow: 0 0.15rem 3.75rem 0 rgb(33 40 50 / 15%);
   font-size: 20px; /* Adjust icon size if necessary */
+  z-index:9999;
 }
 .box:hover{
   color: red;
@@ -1262,9 +1264,7 @@ border:none;
       position: absolute;
       right: 0;
       margin-right: 20px;
-      
       margin-top: 10px;
-     
     }
     
 
@@ -1358,7 +1358,7 @@ border:none;
       margin-bottom: 9% !important;
       
       margin-left: 6% !important;
-      
+      margin: 10px auto;
       z-index:5;
       
     }
@@ -1367,14 +1367,16 @@ border:none;
     .box{
       margin-right: 25px;
       left:0;
-      margin-left: 6px;
+      margin-left: 10px;
       border: none;
       border-radius: 2px;
       height: 35px;
       box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1),
      0 5px 9px rgba(0, 0, 0, 0.08);
       z-index:5;
-      
+      padding: 10px;
+      z-index: 9999;
+      margin:10px;
     }
     .box:hover {
       color:red;
@@ -1390,10 +1392,10 @@ border:none;
  }
     #itemNames {
       margin-right: 2px;
-      font-size: 11pt;
+      font-size: 10pt;
       font-family: 'playfair Display', serif;
       color: black;
-      
+      margin: 10px;
       
     }
 .allIcons {
