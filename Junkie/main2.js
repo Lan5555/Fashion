@@ -3746,6 +3746,7 @@ let cart3 = document.getElementById('Amount');
         title: 'Pick',
         message: 'Please Select an item',
         timeout: 2000,
+        color:'black'
     })
    } else{
       cart();
@@ -4199,7 +4200,7 @@ let toastTrack = 0;
     overlay: true,
     overlayClose: false,
     icon: 'info',
-    
+    color:'black'
   });
 
   // Redirect after the duration
@@ -4293,7 +4294,8 @@ pop.style.display = "none";
 
 function coming (){
   iziToast.success({
-    title:'Coming soon'
+    title:'Coming soon',
+    color:'black'
   });
 }
 
@@ -4347,7 +4349,8 @@ localStorage.setItem('imageTracker',track8);
 function later() {
   iziToast.success({
     title: 'Coming soon',
-    timeOut: 2000
+    timeOut: 2000,
+    color:'black'
   });
 }
 
@@ -4355,7 +4358,8 @@ function info() {
   iziToast.success({
     title: 'About me',
     message: 'Faith Ipinyomi ©Fashion Junkie All rights reserved',
-    timeOut: 20000
+    timeOut: 20000,
+    color:'black'
 
   });
 }
@@ -4404,7 +4408,8 @@ function displayNewProduct(){
     rang: rang
   }).then(() => {
     iziToast.success({
-      message: 'Rang Successfully'
+      message: 'Rang Successfully',
+      color:'black'
     });
   }).catch((error) => {
     iziToast.warning({
@@ -4421,6 +4426,7 @@ function displayNewProduct(){
   }).catch((error) => {
     iziToast.warning({
       message:`Unable to fetch data ${error}`
+      
     });
   });
   }else{
@@ -4445,7 +4451,8 @@ function displayNewProduct(){
     realPage = parseInt(data,10);
     localStorage.setItem('fetchPage',realPage);
     iziToast.success({
-      message:'Data updated successfully'
+      message:'Data updated successfully',
+      color:'black'
     })
   }).catch((error) => {
     iziToast.warning({
