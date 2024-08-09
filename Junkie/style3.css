@@ -92,22 +92,21 @@
 #pop{
   height:400px;
   width: 70%;
-  
-  box-shadow: 0 0 4px black, 0 0 8px white, 0 0 6px black;
-  border-radius: 10px;
+  box-shadow: 0 0.15rem 3.75rem 0 rgb(33 40 50 / 15%);
+  border-radius: 5px;
   display: none;
   position: fixed;
   top:0;
   margin-top: 30px;
   transition: opacity 1s ease;
   animation: slideIn 0.3s ease-in-out;
-  background-color: black;
+  background-color: white;
   z-index: 6;
 }
 #backer{
   text-align: center;
   font-size: 17pt;
-  color: white;
+  color: black;
   text-shadow: 4px;
   margin-top: 25%;
   margin-left: 90%;
@@ -122,10 +121,11 @@
 }
 .color-label{
 font-family: 'playfair Display', serif;
-  text-shadow: 2px 3px 3px;
-  color: white;
+  
+  color: black;
   margin-right: 10px;
   
+  padding: 10px;
 }
 
 #returner {
@@ -684,7 +684,7 @@ border:none;
   height:400px;
   width: 70%;
   background-color: white;
-  box-shadow: 0 0 4px black, 0 0 8px white, 0 0 6px black;
+  box-shadow: 0 0.15rem 3.75rem 0 rgb(33 40 50 / 15%);
   border-radius: 10px;
   display: none;
   position: fixed;
@@ -692,13 +692,12 @@ border:none;
   margin-top: 30px;
   transition: opacity 1s ease;
   animation: slideIn 0.3s ease-in-out;
-  background-color: black;
   z-index: 6;
 }
 #backer{
   text-align: center;
   font-size: 17pt;
-  color: white;
+  color: black;
   text-shadow: 4px;
   margin-top: 25%;
   margin-left: 90%;
@@ -713,10 +712,11 @@ border:none;
 }
 .color-label{
 font-family: 'playfair Display', serif;
-  text-shadow: 2px 3px 3px;
-  color: white;
+  
+  color: black;
   margin-right: 10px;
   
+  padding: 10px;
 }
 
   
@@ -1803,20 +1803,21 @@ iframe{
 #pop{
   height:400px;
   width: 70%;
-  box-shadow: 0 0 4px black, 0 0 8px white, 0 0 6px black;
-  border-radius: 10px;
+  box-shadow: 0 0.15rem 3.75rem 0 rgb(33 40 50 / 15%);
+  border-radius: 5px;
   display: none;
   position: fixed;
   top:0;
   margin-top: 30px;
   transition: opacity 1s ease;
   animation: slideIn 0.3s ease-in-out;
-  background-color: black;
+  background-color: white;
+  margin: 10px;
 }
 #backer{
   text-align: center;
   font-size: 17pt;
-  color: white;
+  color: black;
   text-shadow: 4px;
   margin-top: 60%;
   margin-left: 86%;
@@ -1831,10 +1832,11 @@ iframe{
 }
 .color-label{
 font-family: 'playfair Display', serif;
-  text-shadow: 2px 3px 3px;
-  color: white;
+  
+  color: black;
   margin-right: 10px;
   
+  padding: 10px;
 }
 
 
@@ -2097,16 +2099,17 @@ font-family: 'playfair Display', serif;
 .backColor{
   display: none;
 }
+
 .toggle{
   display: none;
 }
 
 
 #pop li{
-  color: white;
+  color: black;
   text-align: left;
-  padding: 10px;
-  margin: 10px;
+  padding: 5px;
+  margin: 5px;
 }
 
 #lan1{
@@ -2124,4 +2127,8 @@ font-family: 'playfair Display', serif;
   padding: 0px;
   margin-top: -40px;
   
+}
+.backColor input{
+  margin: 10px;
+  padding: 10px;
 }
