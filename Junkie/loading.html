@@ -77,11 +77,34 @@ h1 {
   
 }
 
-
-
   @media only screen and (max-width:600px){
     
     /* HTML: <div class="loader"></div> */
+    
+      .text1{
+    
+    height:30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 0.15rem 3.75rem 0 rgb(33 40 50 / 15%);
+    position:fixed;
+    top:46%;
+    left: 53%;
+    padding:5px;
+    display: none;
+  }
+  .text1 p{
+    color:black;
+    padding:9px;
+    position:fixed;
+    top:-10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+    
+    
 .holder{
   position:fixed;
   top:48%;
@@ -150,11 +173,18 @@ h1{
     width:100px;
     height:100px;
   }
+  .text2{
+    font-size:10pt;
+  }
+
 </style>
 <body>
   <h1>Fashion Junkie!</h1>
     <div class="holder">
       <img src = "image_processing20191220-12904-pwq6fr-1.gif" class = "iconSize">
+      <div class = "text1">
+        <p class = "text2"></p>
+      </div>
     </div>
           <p>Loading resources this usually happens once. Please wait....</p>
           <div id = 'progress-bar'>0%</div>
@@ -441,7 +471,8 @@ h1{
   //  }
       
     const mediaQuery = window.matchMedia('(min-width:542px)');
-
+    const text1 = document.querySelector('.text1')
+    const text2 = document.querySelector('.text2')
     function updateProgress() {
         loadedImages++;
         const percentage = Math.round((loadedImages / totalImages) * 100);
@@ -451,11 +482,14 @@ h1{
           let holder = document.querySelector('.holder')
           if(mediaQuery.matches){
             holder.style.transform = "translateX(700%)";
+            
           }else{
           holder.style.transform = "translateX(250%)";
+          text1.style.display = "none";
           }
           holder.style.transition = "all 1s ease";
           setTimeout(() => {
+            clearInterval(lan)
             window.location.href = 'index2.html';
           },1000)
             
@@ -504,8 +538,70 @@ h1{
         }
       }
       
+      let textDetails = ["Gotta get there real quick","Oh no i'm running late","Yes almost there","Stretching out these bones","I need to get something to eat","ughhhh","Hello there"];
+      let counter = 0;
+      let lan;
+      
+      function returnText(){
+        let random = Math.floor(Math.random() * textDetails.length);
+        return random;
+      }
+      
+      let message;
+      
+      function displayText(){
+        counter++;
+        lan = setInterval(() => {
+          switch(counter){
+            case 1:
+              message = returnText();
+              text1.style.display = "none";
+              setTimeout(() => {
+                text1.style.display = "block";
+              }, 500);
+              text2.innerHTML = textDetails[message];
+              counter++;
+              break;
+            case 2:
+              message = returnText();
+              text1.style.display = "none";
+              setTimeout(() => {
+                text1.style.display = "block";
+              },500);
+              text2.innerHTML = textDetails[message];
+              counter++;
+              break;
+            case 3:
+               message = returnText();
+               text1.style.display = "none";
+               setTimeout(() => {
+                 text1.style.display = "block";
+               }, 500);
+               text2.innerHTML = textDetails[message];
+               counter++;
+              break;
+            case 4:
+              message = returnText();
+              text1.style.display = "none";
+              setTimeout(() => {
+                text1.style.display = "block";
+              }, 500);
+              text2.innerHTML = textDetails[message];
+              counter = 1;
+              break;
+          }
+        },7000);
+      }
       
     window.onload = (() => {
+      if(mediaQuery.matches){
+        text1.style.display = "none"
+      }else{
+        setTimeout(() => {
+          text1.style.display = "block";
+          displayText();
+        },1000);
+      }
       //fetchData();
           // Preload images and then redirect to the next page
     preloadImages(imageUrls)
