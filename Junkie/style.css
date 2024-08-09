@@ -1,7 +1,10 @@
 .navbar-brand{
   font-size: 20pt;
-  font-family: 'playfair Display', serif;
-  
+  font-family: 'Brush Script MT', 'Lucida Handwriting', cursive;
+  color:black;
+}
+.navbar-default{
+  color:black;
 }
 
 .bg-dark{
@@ -80,19 +83,6 @@
             background-color: #0056b3;
         }
 
-        @media only screen and (max:600px){
-          .col-lg-4 {
-            width: 33.3333%;
-            padding: 15px;
-            box-sizing: border-box;
-        }
-
-        }
-        .col-lg-4 {
-          width: 100%;
-          padding: 15px;
-          box-sizing: border-box;
-      }
 
         
         @media (max-width: 992px) {
@@ -116,6 +106,7 @@
         .carousel-inner .item img {
           width:100%;
           height: 40%;
+          
         }
         .container {
             display: flex;
@@ -136,9 +127,9 @@
         
    .col-lg-3{
      
-     border-radius: 10px;
+     border-radius: 8px;
      border:none;
-     box-shadow: 0 0 6px black, 0 0 12px white, 0 0 12px white;
+     box-shadow: 0 0 6px black, 0 0 9px white, 0 0 9px white;
      width:99%;
      
     }
@@ -201,3 +192,10 @@
 .cat-item small {
   color: #777;
 }
+
+
+        .col-lg-4 {
+          width: 100%;
+          padding: 15px;
+          box-sizing: border-box;
+        }
