@@ -7,7 +7,9 @@
 </head>
 <style>
 
-
+body{
+  overflow: hidden;
+}
 
 /* HTML: <div class="loader"></div> */
 .holder{
@@ -52,7 +54,7 @@
   66%  {transform: scale(var(--s,1)) translate(400%,130%)}
   100% {transform: scale(var(--s,1)) translate(400%,0)}
 }
-p {
+.load{
   font-family: 'playfair Display',
     serif;
     margin-top:20em;
@@ -88,27 +90,24 @@ h1 {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     box-shadow: 0 0.15rem 3.75rem 0 rgb(33 40 50 / 15%);
-    position: absolute;
-    top:46%;
+    top:35%;
     left: 53%;
-    padding:5px;
-    display: none;
+    padding:10px;
+    position: absolute;
+    
   }
-  .text1 p{
+  .text2{
     color:black;
-    padding:9px;
-    position: fixed;
-    top:-10px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-  }
+    text-align: center;
+    font-family: 'playfair Display',serif;
+    font-size: 8pt;
+  } 
+
     
     
 .holder{
-  position:absolute;
-  top:48%;
-  left: 35%;
+  margin-top:40%;
+  margin-left: -5%;
   text-align: center;
 }
 .loader {
@@ -143,7 +142,7 @@ h1 {
   100% {transform: scale(var(--s,1)) translate(400%,0)}
 }
 
-p{
+.load{
   font-family: 'playfair Display',
   serif;
 margin-top:25em;
@@ -173,20 +172,17 @@ h1{
     width:100px;
     height:100px;
   }
-  .text2{
-    font-size:10pt;
-  }
 
 </style>
 <body>
   <h1>Fashion Junkie!</h1>
     <div class="holder">
       <img src = "image_processing20191220-12904-pwq6fr-1.gif" class = "iconSize">
-      <div class = "text1">
-        <p class = "text2"></p>
-      </div>
     </div>
-          <p>Loading resources this usually happens once. Please wait....</p>
+          <div class="text1">
+            <p class="text2"></p>
+          </div>
+          <p class = "load">Loading resources this usually happens once. Please wait....</p>
           <div id = 'progress-bar'>0%</div>
   <script>
     // List of image URLs to load and cache
@@ -485,12 +481,12 @@ h1{
             
           }else{
           holder.style.transform = "translateX(250%)";
-          text1.style.display = "none";
+         text1.style.display = "none";
           }
           holder.style.transition = "all 1s ease";
           setTimeout(() => {
             clearInterval(lan)
-            window.location.href = 'index2.html';
+         window.location.href = 'index2.html';
           },1000)
             
         }
