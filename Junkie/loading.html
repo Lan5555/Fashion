@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Image Preloading</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <style>
 
@@ -163,14 +164,84 @@ h1{
 
   } 
   .iconSize{
-    
     width:100px;
     height:100px;
   }
+  
+.circle{
+  position: fixed;
+  top:15%;
+  right:10%;
+  width:30px;
+  height:35px;
+  transition: all 1s ease;
+   border-radius: 10px;
+   padding: 10px;
+  display: none;
+}
+.circle:hover{
+  position:fixed;
+  top:15%;
+  right:20%;
+  width:230px;
+  border-radius: 5px;
+  box-shadow: 0 0.15rem 3.75rem 0 rgb(33 40 50 / 15%);
+}
+.circle:hover::after{
+  content:"Looks like connection is poor. Proceed without preloading?";
+  font-size: 9pt;
+  font-family: 'playfair Display',serif;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+
+@keyframes fadeIn{
+  from {
+    opacity:0;
+  } to {
+    opacity:1;
+  }
+}
+.iconSize2{
+  width:16px;
+  height:16px;
+  
+}
+.move{
+  padding: 10px;
+  border:none;
+  box-shadow: 0 0.15rem 3.75rem 0 rgb(33 40 50 / 15%);
+  border-radius: 5px;
+  margin-top: 20px;
+  position: fixed;
+  right:10%;
+  top:23%;
+  display: none;
+  transition: all 1s ease-in-out;
+  background-color: white;
+}
+.move:hover{
+  background-color: black;
+  color:white;
+  transition: all 1s ease-in-out;
+}
+.move:hover::after{
+  content:" alright";
+  background-color: black;
+  color:white;
+  border-radius: 10px;
+  padding: 3px;
+  font-style: 10pt;
+}
 
 </style>
 <body>
   <h1>Fashion Junkie!</h1>
+    <div class = "circle">
+    <img src = "https://cdn-icons-png.flaticon.com/512/3337/3337075.png" class = "iconSize2">Message!
+    </div>
+       <button class = "move" onclick = "moveNow()">Move</button>
     <div class="holder">
       <img src = "image_processing20191220-12904-pwq6fr-1.gif" class = "iconSize">
     </div>
@@ -437,8 +508,32 @@ h1{
      'updateShoe/shoehugo3.jpg',
      'updateShoe/shoetim.jpg'
     ];
-
-
+    
+    let iconSize2 = document.querySelector('.iconSize2');
+    let move = document.querySelector('.move');
+    let circle = document.querySelector('.circle');
+    iconSize2.addEventListener('click',() => {
+      move.style.display = "block";
+      move.style.right = "20%";
+    });
+    
+    const moveNow = () => {
+      let holder = document.querySelector('.holder')
+      
+      if (mediaQuery.matches) {
+        holder.style.transform = "translateX(700%)";
+      
+      } else {
+        holder.style.transform = "translateX(250%)";
+        text1.style.display = "none";
+        text2.style.display = "none";
+      }
+      holder.style.transition = "all 1s ease";
+      setTimeout(() => {
+        clearInterval(lan)
+        window.location.href = 'index2.html';
+      }, 1000)
+    }
 
     const progressBar = document.getElementById('progress-bar');
     
@@ -476,12 +571,12 @@ h1{
             
           }else{
           holder.style.transform = "translateX(250%)";
-         text1.style.display = "none";
-         text2.style.display = "none";
+        text1.style.display = "none";
+        text2.style.display = "none";
           }
           holder.style.transition = "all 1s ease";
           setTimeout(() => {
-            clearInterval(lan)
+          clearInterval(lan)
         window.location.href = 'index2.html';
           },1000)
             
@@ -594,6 +689,10 @@ h1{
           displayText();
         },1000);
       }
+      
+      setTimeout(() => {
+        circle.style.display = "block";
+      },60000);
       //fetchData();
           // Preload images and then redirect to the next page
     preloadImages(imageUrls)
