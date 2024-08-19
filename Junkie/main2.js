@@ -1,19 +1,19 @@
 document.getElementById('menu').addEventListener('click', function(event) {
       var dropdown = document.getElementById('dropdown');
       dropdown.classList.toggle('open');
-      
-      //con.style.marginLeft= "70%";
-      //con.style.opacity = "0.1";
-      event.stopPropagation(); // Prevent the click from propagating to the document
+    
+    //con.style.marginLeft= "70%";
+    //con.style.opacity = "0.1";
+    event.stopPropagation(); // Prevent the click from propagating to the document
     });
-  let con = document.querySelector('.con');
+    let con = document.querySelector('.con');
     document.addEventListener('click', function(event) {
       var dropdown = document.getElementById('dropdown');
       var isClickInside = dropdown.contains(event.target) || event.target.id === 'menu';
       if (!isClickInside) {
         dropdown.classList.remove('open');
-       // con.style.marginLeft = "";
-       // con.style.opacity = "1";
+        // con.style.marginLeft = "";
+        // con.style.opacity = "1";
       }
     });
     
@@ -4511,6 +4511,11 @@ function displayNewProduct(){
        info.innerHTML += `<li>${data}</li>`;
      })
    })
+   
+   let acc = document.getElementById('acc');
+   dataRef.on('value',() => {
+     acc.src = "https://cdn-icons-png.flaticon.com/512/1182/1182718.png";
+   });
  }
  let ul = document.querySelector('.ull');
  let toggle = document.querySelector('.toggle');
