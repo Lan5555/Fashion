@@ -1,10 +1,21 @@
-.navbar-brand{
+.navbar-brand p{
   font-size: 20pt;
   font-family: 'Brush Script MT', 'Lucida Handwriting', cursive;
-  color:black;
+  background-image: url('realShirt/shirt tees.JPG');
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-size: 200%;
+  color: transparent;
+  animation: moveBg 10s infinite;
+}
+@keyframes moveBg{
+  100%{
+    background-position: 100% 0;
+  }
 }
 .navbar-inverse{
   background-color:black;
+  color:white;
 }
 
 .bg-dark{
