@@ -1389,7 +1389,6 @@ border:none;
       position: fixed;
       bottom:0;
       margin-bottom: 9% !important;
-      
       margin-left: 6% !important;
       margin: 10px auto;
       z-index:5;
@@ -1680,7 +1679,7 @@ border:none;
   border: 1px solid red;
   border-radius: 10px;
   box-shadow: 4px, 0px, 4px;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   margin-bottom: 52px;
   margin-left: 38%;
