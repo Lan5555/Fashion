@@ -4467,26 +4467,46 @@ function displayNewProduct(){
  let can = document.querySelector('.con');
  let number3 = document.getElementById('Amount');
  let number2 = document.getElementById('num');
+ let bottomIcons = document.querySelector('.buttomIcons');
+ let namer = document.getElementById('names');
  
  let timeout;
 
-    con.addEventListener('scroll', () => {
+    window.addEventListener('scroll', () => {
+      
         if (mediaQuery.matches) {
-            allIcons.style.opacity = "0.1";
-            number3.style.opacity = "0.1";
-            number2.style.opacity = "0.1";
-
+            allIcons.style.width = "50px";
+            allIcons.style.height = "50px";
+            allIcons.style.transition = "all 0.3s ease-in-out";
+            allIcons.style.position = "fixed";
+            allIcons.style.bottom = "20px";
+            allIcons.style.right = "-20px";
+            namer.style.display = "none";
+            number2.style.display = "none";
+            number3.style.display = "none";
+            allIcons.style.borderRadius = "50%";
+            allIcons.style.borderRadius = "50%";
             clearTimeout(timeout); // Clear the timeout if scrolling continues
             timeout = setTimeout(() => {
-                allIcons.style.opacity = "1"; 
-                number3.style.opacity = "1";
-                number2.style.opacity = "1";// Reset opacity after scrolling stops
+            allIcons.style.width = "";
+            allIcons.style.height = "";
+            allIcons.style.transition = "all 0.3s ease-in-out";
+            allIcons.style.position = "";
+            allIcons.style.bottom = "";
+            allIcons.style.borderRadius = "";
+            allIcons.style.right = "";
+            namer.style.display = "";
+            allIcons.style.borderRadius = "";
+            number2.style.display = "";
+            number3.style.display = "";
             }, 200); // Adjust timeout duration as needed
         } else {
-            allIcons.style.opacity = "1"; // Reset opacity immediately if not in media query
+            bottomIcons.style.opacity = "1"; // Reset opacity immediately if not in media query
+            
         }
     
  });
+ 
  
  let bell = false;
  function coming1(){
