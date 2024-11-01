@@ -4475,30 +4475,10 @@ function displayNewProduct(){
     window.addEventListener('scroll', () => {
       
         if (mediaQuery.matches) {
-            allIcons.style.width = "50px";
-            allIcons.style.height = "50px";
-            allIcons.style.transition = "all 0.3s ease-in-out";
-            allIcons.style.position = "fixed";
-            allIcons.style.bottom = "20px";
-            allIcons.style.right = "-20px";
-            namer.style.display = "none";
-            number2.style.display = "none";
-            number3.style.display = "none";
-            allIcons.style.borderRadius = "50%";
-            allIcons.style.borderRadius = "50%";
+            
             clearTimeout(timeout); // Clear the timeout if scrolling continues
             timeout = setTimeout(() => {
-            allIcons.style.width = "";
-            allIcons.style.height = "";
-            allIcons.style.transition = "all 0.3s ease-in-out";
-            allIcons.style.position = "";
-            allIcons.style.bottom = "";
-            allIcons.style.borderRadius = "";
-            allIcons.style.right = "";
-            namer.style.display = "";
-            allIcons.style.borderRadius = "";
-            number2.style.display = "";
-            number3.style.display = "";
+            
             }, 200); // Adjust timeout duration as needed
         } else {
             bottomIcons.style.opacity = "1"; // Reset opacity immediately if not in media query
